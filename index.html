@@ -1,0 +1,498 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BRV Hub — AI Agent Content Registry</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+            rel="stylesheet"
+        />
+        <script>
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        fontFamily: {
+                            sans: ["Inter", "sans-serif"],
+                            mono: ["JetBrains Mono", "monospace"],
+                        },
+                        colors: {
+                            brv: {
+                                bg: "#0f0f0f",
+                                surface: "#141414",
+                                border: "#1e1e1e",
+                                "border-light": "#2a2a2a",
+                                primary: "#099250",
+                                "primary-light": "#34d399",
+                                "primary-dim": "#065f36",
+                                blue: "#2934ff",
+                                "blue-light": "#8aa5ff",
+                            },
+                        },
+                    },
+                },
+            };
+        </script>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            body {
+                font-family: "Inter", sans-serif;
+                background: #0f0f0f;
+                color: #d5dbe6;
+            }
+
+            ::-webkit-scrollbar {
+                width: 5px;
+            }
+            ::-webkit-scrollbar-track {
+                background: #0f0f0f;
+            }
+            ::-webkit-scrollbar-thumb {
+                background: #2a2a2a;
+                border-radius: 3px;
+            }
+            ::-webkit-scrollbar-thumb:hover {
+                background: #3a3a3a;
+            }
+
+            .entry-card {
+                transition:
+                    border-color 0.2s ease,
+                    background 0.2s ease;
+            }
+            .entry-card:hover {
+                border-color: #2a2a2a;
+                background: #181818;
+            }
+
+            .filter-btn {
+                transition: all 0.15s ease;
+            }
+            .filter-btn.active {
+                background: #ffffff;
+                color: #0f0f0f;
+                font-weight: 600;
+            }
+            .filter-btn:not(.active):hover {
+                background: #1e1e1e;
+            }
+
+            .search-input:focus {
+                border-color: #099250;
+                box-shadow: 0 0 0 3px rgba(9, 146, 80, 0.15);
+            }
+
+            .tag-pill:hover {
+                border-color: #3a3a3a;
+            }
+
+            .copy-toast {
+                animation:
+                    toast-in 0.2s ease,
+                    toast-out 0.2s ease 1.3s forwards;
+            }
+            @keyframes toast-in {
+                from {
+                    opacity: 0;
+                    transform: translate(-50%, 8px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translate(-50%, 0);
+                }
+            }
+            @keyframes toast-out {
+                from {
+                    opacity: 1;
+                }
+                to {
+                    opacity: 0;
+                }
+            }
+
+            .entry-card {
+                animation: card-in 0.3s ease backwards;
+            }
+            @keyframes card-in {
+                from {
+                    opacity: 0;
+                    transform: translateY(8px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }
+
+            .category-select {
+                appearance: none;
+                background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%237d7d7d' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+                background-repeat: no-repeat;
+                background-position: right 12px center;
+                padding-right: 32px;
+            }
+
+            .install-btn:hover {
+                background: #099250;
+                border-color: #099250;
+                color: #ffffff;
+            }
+        </style>
+    </head>
+    <body class="min-h-screen">
+        <!-- Header -->
+        <header class="border-b border-brv-border">
+            <div class="max-w-5xl mx-auto px-6 py-10">
+                <div class="flex items-start justify-between">
+                    <div>
+                        <div class="flex items-center gap-3 mb-4">
+                            <div
+                                class="w-9 h-9 rounded-lg bg-white flex items-center justify-center"
+                            >
+                                <span
+                                    class="font-mono font-bold text-brv-bg text-sm"
+                                    >B</span
+                                >
+                            </div>
+                            <h1
+                                class="font-sans font-700 text-[22px] tracking-tight text-white"
+                            >
+                                BRV Hub
+                            </h1>
+                        </div>
+                        <p
+                            class="text-[#7d7d7d] text-[15px] max-w-lg leading-relaxed"
+                        >
+                            Community-driven registry for AI coding agent
+                            content.<br />
+                            Browse and install skills, bundles, and more.
+                        </p>
+                    </div>
+                    <div class="flex items-center gap-5 mt-2">
+                        <span
+                            id="header-count"
+                            class="text-xs font-mono text-[#7d7d7d]"
+                            >0 entries</span
+                        >
+                        <a
+                            href="https://github.com/campfirein/brv-hub"
+                            target="_blank"
+                            rel="noopener"
+                            class="text-[#7d7d7d] hover:text-white transition-colors"
+                        >
+                            <svg
+                                width="20"
+                                height="20"
+                                viewBox="0 0 24 24"
+                                fill="currentColor"
+                            >
+                                <path
+                                    d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                                />
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Controls -->
+        <section class="max-w-5xl mx-auto px-6 pt-8 pb-2">
+            <div class="flex flex-col sm:flex-row gap-3">
+                <!-- Search -->
+                <div class="relative flex-1">
+                    <svg
+                        class="absolute left-3.5 top-1/2 -translate-y-1/2 text-[#7d7d7d]"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <circle cx="11" cy="11" r="8"></circle>
+                        <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                    </svg>
+                    <input
+                        id="search"
+                        type="text"
+                        placeholder="Search entries..."
+                        class="search-input w-full bg-brv-surface border border-brv-border rounded-lg pl-10 pr-4 py-2.5 text-sm text-[#d5dbe6] placeholder-[#555] outline-none transition-all"
+                    />
+                </div>
+
+                <!-- Type filter -->
+                <div
+                    class="flex gap-1 bg-brv-surface border border-brv-border rounded-lg p-1"
+                >
+                    <button
+                        data-type="all"
+                        class="filter-btn active px-3.5 py-1.5 rounded-md text-xs text-[#7d7d7d]"
+                    >
+                        All
+                    </button>
+                    <button
+                        data-type="agent-skill"
+                        class="filter-btn px-3.5 py-1.5 rounded-md text-xs text-[#7d7d7d]"
+                    >
+                        Skills
+                    </button>
+                    <button
+                        data-type="bundle"
+                        class="filter-btn px-3.5 py-1.5 rounded-md text-xs text-[#7d7d7d]"
+                    >
+                        Bundles
+                    </button>
+                </div>
+
+                <!-- Category filter -->
+                <select
+                    id="category-filter"
+                    class="category-select bg-brv-surface border border-brv-border rounded-lg px-3.5 py-2.5 text-xs text-[#7d7d7d] outline-none focus:border-brv-primary transition-colors cursor-pointer"
+                >
+                    <option value="all">All categories</option>
+                </select>
+            </div>
+        </section>
+
+        <!-- Results count -->
+        <section class="max-w-5xl mx-auto px-6 py-3">
+            <p id="results-count" class="text-xs text-[#555]"></p>
+        </section>
+
+        <!-- Entries grid -->
+        <main class="max-w-5xl mx-auto px-6 pb-20">
+            <div
+                id="entries-grid"
+                class="grid grid-cols-1 md:grid-cols-2 gap-3"
+            ></div>
+            <div id="empty-state" class="hidden text-center py-24">
+                <p class="text-[#555] text-sm">
+                    No entries match your filters.
+                </p>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="border-t border-brv-border">
+            <div
+                class="max-w-5xl mx-auto px-6 py-6 flex items-center justify-between"
+            >
+                <p class="text-xs text-[#555]">BRV Hub &middot; MIT License</p>
+                <p id="footer-generated" class="text-xs text-[#555]"></p>
+            </div>
+        </footer>
+
+        <script>
+            const CATEGORY_LABELS = {
+                productivity: "Productivity",
+                "code-quality": "Code Quality",
+                testing: "Testing",
+                documentation: "Documentation",
+                refactoring: "Refactoring",
+                debugging: "Debugging",
+                deployment: "Deployment",
+                analysis: "Analysis",
+                security: "Security",
+                learning: "Learning",
+            };
+
+            const TYPE_CONFIG = {
+                "agent-skill": {
+                    label: "skill",
+                    bg: "#099250",
+                    text: "#ffffff",
+                },
+                bundle: { label: "bundle", bg: "#2934ff", text: "#ffffff" },
+            };
+
+            let allEntries = [];
+            let activeType = "all";
+            let activeCategory = "all";
+            let searchQuery = "";
+
+            async function init() {
+                try {
+                    const res = await fetch("./registry.json");
+                    const registry = await res.json();
+                    allEntries = registry.entries;
+
+                    document.getElementById("header-count").textContent =
+                        `${registry.count} entries`;
+                    document.getElementById("footer-generated").textContent =
+                        `Registry v${registry.version}`;
+
+                    populateCategories();
+                    render();
+                    bindEvents();
+                } catch (err) {
+                    document.getElementById("entries-grid").innerHTML =
+                        `<p class="text-red-400 text-sm col-span-2">Failed to load registry.json</p>`;
+                }
+            }
+
+            function populateCategories() {
+                const cats = [
+                    ...new Set(allEntries.map((e) => e.category)),
+                ].sort();
+                const select = document.getElementById("category-filter");
+                cats.forEach((cat) => {
+                    const opt = document.createElement("option");
+                    opt.value = cat;
+                    opt.textContent = CATEGORY_LABELS[cat] || cat;
+                    select.appendChild(opt);
+                });
+            }
+
+            function bindEvents() {
+                document
+                    .getElementById("search")
+                    .addEventListener("input", (e) => {
+                        searchQuery = e.target.value.toLowerCase().trim();
+                        render();
+                    });
+
+                document.querySelectorAll(".filter-btn").forEach((btn) => {
+                    btn.addEventListener("click", () => {
+                        document
+                            .querySelectorAll(".filter-btn")
+                            .forEach((b) => b.classList.remove("active"));
+                        btn.classList.add("active");
+                        activeType = btn.dataset.type;
+                        render();
+                    });
+                });
+
+                document
+                    .getElementById("category-filter")
+                    .addEventListener("change", (e) => {
+                        activeCategory = e.target.value;
+                        render();
+                    });
+            }
+
+            function filterEntries() {
+                return allEntries.filter((entry) => {
+                    if (activeType !== "all" && entry.type !== activeType)
+                        return false;
+                    if (
+                        activeCategory !== "all" &&
+                        entry.category !== activeCategory
+                    )
+                        return false;
+                    if (searchQuery) {
+                        const haystack = [
+                            entry.name,
+                            entry.description,
+                            entry.id,
+                            entry.author,
+                            ...entry.tags,
+                        ]
+                            .join(" ")
+                            .toLowerCase();
+                        if (!haystack.includes(searchQuery)) return false;
+                    }
+                    return true;
+                });
+            }
+
+            function render() {
+                const filtered = filterEntries();
+                const grid = document.getElementById("entries-grid");
+                const empty = document.getElementById("empty-state");
+                const count = document.getElementById("results-count");
+
+                count.textContent = `${filtered.length} of ${allEntries.length} entries`;
+
+                if (filtered.length === 0) {
+                    grid.classList.add("hidden");
+                    empty.classList.remove("hidden");
+                    return;
+                }
+
+                grid.classList.remove("hidden");
+                empty.classList.add("hidden");
+
+                grid.innerHTML = filtered
+                    .map((entry, i) => {
+                        const typeConf = TYPE_CONFIG[entry.type] || {
+                            label: entry.type,
+                            bg: "#7d7d7d",
+                            text: "#fff",
+                        };
+                        const tags = entry.tags.slice(0, 4);
+                        const agents = entry.compatibility?.agents;
+                        return `
+          <article class="entry-card bg-brv-surface border border-brv-border rounded-xl p-5 flex flex-col cursor-pointer" onclick="openEntry(event, '${entry.path_url}')" style="animation-delay: ${i * 40}ms">
+            <!-- Header -->
+            <div class="flex items-center justify-between mb-3.5">
+              <div class="flex items-center gap-2.5">
+                <span
+                  class="inline-flex items-center px-2 py-[3px] rounded-md text-[10px] font-semibold uppercase tracking-wider"
+                  style="background: ${typeConf.bg}; color: ${typeConf.text};"
+                >${typeConf.label}</span>
+                <span class="text-[11px] text-[#555]">v${entry.version}</span>
+              </div>
+
+            </div>
+
+            <!-- Title & description -->
+            <h3 class="font-medium text-white text-[15px] mb-1.5">${entry.name}</h3>
+            <p class="text-[13px] text-[#7d7d7d] leading-relaxed mb-4 flex-1">${entry.description}</p>
+
+            <!-- Tags -->
+            <div class="flex flex-wrap gap-1.5 mb-4">
+              ${tags.map((tag) => `<span class="tag-pill px-2 py-[3px] rounded-md text-[11px] text-[#7d7d7d] bg-[#1a1a1a] border border-brv-border transition-colors cursor-default">${tag}</span>`).join("")}
+            </div>
+
+            <!-- Meta row -->
+            <div class="flex items-center justify-between pt-3.5 border-t border-brv-border">
+              <div class="flex items-center gap-3">
+                <span class="text-[11px] text-[#555]">${CATEGORY_LABELS[entry.category] || entry.category}</span>
+                ${agents ? `<span class="text-[11px] text-[#444]">${agents.length} agent${agents.length > 1 ? "s" : ""}</span>` : ""}
+              </div>
+              <button
+                onclick="copyInstall('${entry.id}')"
+                class="install-btn group flex items-center gap-1.5 px-2.5 py-1 rounded-md border border-brv-border transition-all text-[11px] font-mono text-[#7d7d7d]"
+              >
+                <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+                </svg>
+                install
+              </button>
+            </div>
+          </article>
+        `;
+                    })
+                    .join("");
+            }
+
+            function openEntry(event, url) {
+                if (event.target.closest("button")) return;
+                window.open(url, "_blank", "noopener");
+            }
+
+            function copyInstall(id) {
+                const cmd = `brv hub install ${id}`;
+                navigator.clipboard.writeText(cmd).then(() => {
+                    const toast = document.createElement("div");
+                    toast.className =
+                        "copy-toast fixed bottom-6 left-1/2 -translate-x-1/2 bg-[#141414] border border-[#2a2a2a] text-white text-xs font-mono px-4 py-2.5 rounded-lg z-50";
+                    toast.innerHTML = `<span class="text-[#7d7d7d]">Copied:</span> ${cmd}`;
+                    document.body.appendChild(toast);
+                    setTimeout(() => toast.remove(), 1600);
+                });
+            }
+
+            init();
+        </script>
+    </body>
+</html>

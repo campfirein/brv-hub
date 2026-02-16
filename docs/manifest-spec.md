@@ -1,0 +1,93 @@
+# Manifest Specification v1.0
+
+Every entry in BRV Hub requires a `manifest.json` file.
+
+## Required Fields
+
+### `id` (string)
+Unique identifier in kebab-case. Must match the directory name. Must be unique across all entries.
+- Pattern: `^[a-z0-9][a-z0-9-]*[a-z0-9]$`
+- Length: 3-50 characters
+
+### `name` (string)
+Human-readable name, 3-100 characters. Must be unique across all entries.
+
+### `version` (string)
+Semantic version: `MAJOR.MINOR.PATCH` (e.g. `1.0.0`).
+
+### `description` (string)
+Short description, max 140 characters.
+
+### `type` (string)
+Content type. Determines which directory the entry belongs in.
+
+| Type | Directory |
+|------|-----------|
+| `agent-skill` | `skills/` |
+| `bundle` | `bundles/` |
+
+### `author` (object)
+- `name` (string, required)
+- `email` (string, optional)
+- `url` (string, optional)
+
+### `tags` (array)
+1-10 string tags for search and discovery.
+
+### `category` (string)
+One of: `productivity`, `code-quality`, `testing`, `documentation`, `refactoring`, `debugging`, `deployment`, `analysis`, `security`, `learning`.
+
+### `files` (object)
+- `main` (string, required) — main content file
+- `readme` (string, required) — documentation file
+- `examples` (array of strings, optional) — example files
+- `config` (string, optional) — configuration template
+
+## Optional Fields
+
+### `long_description` (string)
+Detailed description without character limit.
+
+### `license` (string)
+License identifier. Defaults to `MIT`.
+
+### `repository` (string)
+URL to the source repository.
+
+### `compatibility` (object)
+- `agents` (array of strings) — compatible AI agents
+- `min_version` (string) — minimum BRV CLI version (semver)
+
+### `dependencies` (array)
+IDs of other BRV Hub entries this depends on.
+
+### `metadata` (object)
+- `use_cases` (array of strings)
+
+### `created_at` (string)
+ISO 8601 timestamp.
+
+### `updated_at` (string)
+ISO 8601 timestamp.
+
+## Example
+
+```json
+{
+  "id": "code-review",
+  "name": "Code Review Assistant",
+  "version": "1.0.0",
+  "description": "Comprehensive code review skill for pull requests and code changes",
+  "type": "agent-skill",
+  "author": {
+    "name": "BRV Hub Team",
+    "url": "https://github.com/campfirein"
+  },
+  "tags": ["code-review", "quality", "security"],
+  "category": "code-quality",
+  "files": {
+    "main": "skill.yaml",
+    "readme": "README.md"
+  }
+}
+```

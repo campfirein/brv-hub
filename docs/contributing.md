@@ -1,0 +1,69 @@
+# Contributing to BRV Hub
+
+## How to Submit
+
+1. **Fork** this repository
+2. **Create a directory** for your content:
+   - Agent skills go in `skills/<your-skill-id>/`
+   - Bundles go in `bundles/<your-bundle-id>/`
+3. **Add required files:**
+   - `manifest.json` — metadata (see [Manifest Spec](./manifest-spec.md))
+   - Main content file (referenced in `manifest.json` as `files.main`)
+   - `README.md` — usage documentation
+4. **Open a Pull Request**
+
+## Directory Naming
+
+- Use kebab-case: `my-cool-skill`, not `myCoolSkill`
+- 3-50 characters
+- Must match the `id` field in your `manifest.json`
+
+## Naming Rules
+
+- The `id` field **must** match the directory name exactly
+- The `name` field **must** be unique across all entries (skills and bundles)
+- No two entries can share the same `id` or `name`
+
+## Manifest Requirements
+
+Your `manifest.json` must include:
+
+| Field | Description |
+|-------|-------------|
+| `id` | Matches directory name, kebab-case, unique |
+| `name` | Human-readable name, unique across all entries |
+| `version` | Semver (e.g. `1.0.0`) |
+| `description` | Short description, max 140 chars |
+| `type` | `agent-skill` or `bundle` |
+| `author` | Object with `name` (required), `email` and `url` (optional) |
+| `tags` | 1-10 search tags |
+| `category` | See categories below |
+| `files` | Object with `main` and `readme` (required) |
+
+Optional fields: `long_description`, `license`, `repository`, `compatibility`, `dependencies`, `metadata`, `created_at`, `updated_at`. See the full [Manifest Spec](./manifest-spec.md).
+
+## Categories
+
+`productivity` `code-quality` `testing` `documentation` `refactoring` `debugging` `deployment` `analysis` `security` `learning`
+
+## Validation
+
+Before submitting, validate locally:
+
+```bash
+npm install
+npm run validate
+```
+
+This checks:
+- Schema compliance (required fields, types, formats)
+- `id` matches directory name
+- `type` matches parent directory (`agent-skill` in `skills/`, `bundle` in `bundles/`)
+- No duplicate `id` or `name` across all entries
+- All files referenced in `manifest.json` exist
+
+## Review Process
+
+1. Automated validation runs on your PR
+2. A maintainer reviews your submission
+3. Once approved, your content is merged and the registry is updated

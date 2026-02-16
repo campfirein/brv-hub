@@ -1,0 +1,37 @@
+name: Release
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'registry.json'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Get registry info
+        id: registry
+        run: |
+          VERSION=$(jq -r '.version' registry.json)
+          COUNT=$(jq -r '.count' registry.json)
+          echo "version=$VERSION" >> $GITHUB_OUTPUT
+          echo "count=$COUNT" >> $GITHUB_OUTPUT
+
+      - name: Create tag
+        run: |
+          TAG="v${{ steps.registry.outputs.version }}-${{ steps.registry.outputs.count }}-$(date +%Y%m%d%H%M%S)"
+          git tag $TAG
+          git push origin $TAG
+
+      - name: Create release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: v${{ steps.registry.outputs.version }}-${{ steps.registry.outputs.count }}-$(date +%Y%m%d%H%M%S)
+          name: Registry v${{ steps.registry.outputs.version }} (${{ steps.registry.outputs.count }} entries)
+          generate_release_notes: true

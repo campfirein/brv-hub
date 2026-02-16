@@ -1,0 +1,155 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BRV Hub Manifest",
+  "description": "Schema for BRV Hub content manifest",
+  "type": "object",
+  "required": [
+    "id",
+    "name",
+    "version",
+    "description",
+    "type",
+    "author",
+    "tags",
+    "category",
+    "files"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+      "minLength": 3,
+      "maxLength": 50,
+      "description": "Unique identifier in kebab-case. Must match the directory name."
+    },
+    "name": {
+      "type": "string",
+      "minLength": 3,
+      "maxLength": 100,
+      "description": "Human-readable name"
+    },
+    "version": {
+      "type": "string",
+      "pattern": "^\\d+\\.\\d+\\.\\d+$",
+      "description": "Semantic version (e.g. 1.0.0)"
+    },
+    "description": {
+      "type": "string",
+      "maxLength": 140,
+      "description": "Short description, max 140 characters"
+    },
+    "long_description": {
+      "type": "string",
+      "description": "Detailed description"
+    },
+    "type": {
+      "type": "string",
+      "enum": ["agent-skill", "bundle"],
+      "description": "Content type. Determines which directory this entry belongs in."
+    },
+    "author": {
+      "type": "object",
+      "required": ["name"],
+      "properties": {
+        "name": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "url": { "type": "string", "format": "uri" }
+      },
+      "additionalProperties": false
+    },
+    "license": {
+      "type": "string",
+      "default": "MIT"
+    },
+    "repository": {
+      "type": "string",
+      "format": "uri"
+    },
+    "tags": {
+      "type": "array",
+      "items": { "type": "string" },
+      "minItems": 1,
+      "maxItems": 10,
+      "description": "Search tags"
+    },
+    "category": {
+      "type": "string",
+      "enum": [
+        "productivity",
+        "code-quality",
+        "testing",
+        "documentation",
+        "refactoring",
+        "debugging",
+        "deployment",
+        "analysis",
+        "security",
+        "learning"
+      ]
+    },
+    "compatibility": {
+      "type": "object",
+      "properties": {
+        "agents": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Compatible AI agents"
+        },
+        "min_version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Minimum BRV CLI version"
+        }
+      },
+      "additionalProperties": false
+    },
+    "files": {
+      "type": "object",
+      "required": ["main", "readme"],
+      "properties": {
+        "main": {
+          "type": "string",
+          "description": "Main content file"
+        },
+        "readme": {
+          "type": "string",
+          "description": "Documentation file"
+        },
+        "examples": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "Example files"
+        },
+        "config": {
+          "type": "string",
+          "description": "Configuration template"
+        }
+      },
+      "additionalProperties": false
+    },
+    "dependencies": {
+      "type": "array",
+      "items": { "type": "string" },
+      "description": "IDs of other entries this depends on"
+    },
+    "metadata": {
+      "type": "object",
+      "properties": {
+        "use_cases": {
+          "type": "array",
+          "items": { "type": "string" }
+        }
+      },
+      "additionalProperties": false
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    }
+  },
+  "additionalProperties": false
+}

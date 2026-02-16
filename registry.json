@@ -1,0 +1,535 @@
+{
+  "version": "1.0.0",
+  "generated_at": "2026-02-16T22:23:19.644Z",
+  "count": 11,
+  "entries": [
+    {
+      "id": "byterover-review",
+      "name": "ByteRover Code Review",
+      "version": "1.0.0",
+      "description": "Review code changes against stored conventions, patterns, architecture decisions, and security standards",
+      "type": "agent-skill",
+      "author": "ByteRover Team",
+      "tags": [
+        "code-review",
+        "conventions",
+        "byterover",
+        "security",
+        "architecture",
+        "quality"
+      ],
+      "category": "code-quality",
+      "path": "skills/byterover-review",
+      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-review",
+      "content_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-review/SKILL.md",
+      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-review/manifest.json",
+      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-review/README.md",
+      "file_tree": [
+        {
+          "name": "README.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-review/README.md"
+        },
+        {
+          "name": "SKILL.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-review/SKILL.md"
+        },
+        {
+          "name": "manifest.json",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-review/manifest.json"
+        }
+      ],
+      "created_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-17T00:00:00Z",
+      "compatibility": {
+        "agents": ["claude", "aider", "cursor", "continue"]
+      },
+      "metadata": {
+        "use_cases": [
+          "Pre-commit review",
+          "Pull request review",
+          "Convention compliance check",
+          "Security review"
+        ]
+      }
+    },
+    {
+      "id": "byterover-plan",
+      "name": "ByteRover Context-Aware Planning",
+      "version": "1.0.0",
+      "description": "Create structured implementation plans informed by existing knowledge using goal-backward analysis",
+      "type": "agent-skill",
+      "author": "ByteRover Team",
+      "tags": [
+        "planning",
+        "implementation",
+        "byterover",
+        "goal-backward",
+        "task-breakdown",
+        "architecture"
+      ],
+      "category": "productivity",
+      "path": "skills/byterover-plan",
+      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-plan",
+      "content_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-plan/SKILL.md",
+      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-plan/manifest.json",
+      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-plan/README.md",
+      "file_tree": [
+        {
+          "name": "README.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-plan/README.md"
+        },
+        {
+          "name": "SKILL.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-plan/SKILL.md"
+        },
+        {
+          "name": "manifest.json",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-plan/manifest.json"
+        }
+      ],
+      "created_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-17T00:00:00Z",
+      "compatibility": {
+        "agents": ["claude", "aider", "cursor", "continue"]
+      },
+      "metadata": {
+        "use_cases": [
+          "Feature implementation planning",
+          "Complex task decomposition",
+          "Multi-file refactor planning",
+          "Scope analysis and task sequencing"
+        ]
+      }
+    },
+    {
+      "id": "byterover-explore",
+      "name": "ByteRover Explore",
+      "version": "1.0.0",
+      "description": "Systematically explore a codebase and curate findings into ByteRover's context tree",
+      "type": "agent-skill",
+      "author": "ByteRover Team",
+      "tags": [
+        "exploration",
+        "onboarding",
+        "byterover",
+        "codebase-mapping",
+        "knowledge",
+        "documentation"
+      ],
+      "category": "analysis",
+      "path": "skills/byterover-explore",
+      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-explore",
+      "content_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-explore/SKILL.md",
+      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-explore/manifest.json",
+      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-explore/README.md",
+      "file_tree": [
+        {
+          "name": "README.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-explore/README.md"
+        },
+        {
+          "name": "SKILL.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-explore/SKILL.md"
+        },
+        {
+          "name": "manifest.json",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-explore/manifest.json"
+        }
+      ],
+      "created_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-17T00:00:00Z",
+      "compatibility": {
+        "agents": ["claude", "aider", "cursor", "continue"]
+      },
+      "metadata": {
+        "use_cases": [
+          "New codebase onboarding",
+          "Building a knowledge base from scratch",
+          "Post-refactor knowledge refresh",
+          "Documentation coverage audit"
+        ]
+      }
+    },
+    {
+      "id": "byterover-audit",
+      "name": "ByteRover Knowledge Audit",
+      "version": "1.0.0",
+      "description": "Audit knowledge freshness and coverage, identify stale entries and gaps, and provide remediation commands",
+      "type": "agent-skill",
+      "author": "ByteRover Team",
+      "tags": [
+        "audit",
+        "knowledge",
+        "byterover",
+        "documentation",
+        "staleness",
+        "coverage"
+      ],
+      "category": "analysis",
+      "path": "skills/byterover-audit",
+      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-audit",
+      "content_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-audit/SKILL.md",
+      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-audit/manifest.json",
+      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-audit/README.md",
+      "file_tree": [
+        {
+          "name": "README.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-audit/README.md"
+        },
+        {
+          "name": "SKILL.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-audit/SKILL.md"
+        },
+        {
+          "name": "manifest.json",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-audit/manifest.json"
+        }
+      ],
+      "created_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-17T00:00:00Z",
+      "compatibility": {
+        "agents": ["claude", "aider", "cursor", "continue"]
+      },
+      "metadata": {
+        "use_cases": [
+          "Post-refactor knowledge validation",
+          "Periodic knowledge base maintenance",
+          "Knowledge drift detection",
+          "Pre-feature documentation check"
+        ]
+      }
+    },
+    {
+      "id": "byterover-milestone",
+      "name": "ByteRover Milestone Planning",
+      "version": "1.0.0",
+      "description": "Define project milestones with goals, scoped requirements, phased roadmaps, and implementation decisions",
+      "type": "agent-skill",
+      "author": "ByteRover Team",
+      "tags": [
+        "milestone",
+        "planning",
+        "byterover",
+        "requirements",
+        "roadmap",
+        "scoping"
+      ],
+      "category": "productivity",
+      "path": "skills/byterover-milestone",
+      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-milestone",
+      "content_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-milestone/SKILL.md",
+      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-milestone/manifest.json",
+      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-milestone/README.md",
+      "file_tree": [
+        {
+          "name": "README.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-milestone/README.md"
+        },
+        {
+          "name": "SKILL.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-milestone/SKILL.md"
+        },
+        {
+          "name": "manifest.json",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-milestone/manifest.json"
+        }
+      ],
+      "created_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-17T00:00:00Z",
+      "compatibility": {
+        "agents": ["claude", "aider", "cursor", "continue"]
+      },
+      "metadata": {
+        "use_cases": [
+          "New project kickoff",
+          "Next milestone definition",
+          "Requirements scoping and prioritization",
+          "Phased roadmap creation"
+        ]
+      }
+    },
+    {
+      "id": "byterover-execute",
+      "name": "ByteRover Phase Execution",
+      "version": "1.0.0",
+      "description": "Execute a phase plan task by task with verification, atomic commits, and progress tracking",
+      "type": "agent-skill",
+      "author": "ByteRover Team",
+      "tags": [
+        "execution",
+        "implementation",
+        "byterover",
+        "planning",
+        "verification",
+        "workflow"
+      ],
+      "category": "productivity",
+      "path": "skills/byterover-execute",
+      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-execute",
+      "content_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-execute/SKILL.md",
+      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-execute/manifest.json",
+      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-execute/README.md",
+      "file_tree": [
+        {
+          "name": "README.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-execute/README.md"
+        },
+        {
+          "name": "SKILL.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-execute/SKILL.md"
+        },
+        {
+          "name": "manifest.json",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-execute/manifest.json"
+        }
+      ],
+      "created_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-17T00:00:00Z",
+      "compatibility": {
+        "agents": ["claude", "aider", "cursor", "continue"]
+      },
+      "metadata": {
+        "use_cases": [
+          "Executing planned implementation phases",
+          "Resuming partially completed phases",
+          "Structured task tracking with verification",
+          "Phase transition management"
+        ]
+      }
+    },
+    {
+      "id": "byterover-onboard",
+      "name": "ByteRover Project Onboarding",
+      "version": "1.0.0",
+      "description": "Interactive knowledge-driven project onboarding with structured overview and gap identification",
+      "type": "agent-skill",
+      "author": "ByteRover Team",
+      "tags": [
+        "onboarding",
+        "byterover",
+        "knowledge",
+        "overview",
+        "project-setup",
+        "getting-started"
+      ],
+      "category": "learning",
+      "path": "skills/byterover-onboard",
+      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-onboard",
+      "content_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-onboard/SKILL.md",
+      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-onboard/manifest.json",
+      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-onboard/README.md",
+      "file_tree": [
+        {
+          "name": "README.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-onboard/README.md"
+        },
+        {
+          "name": "SKILL.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-onboard/SKILL.md"
+        },
+        {
+          "name": "manifest.json",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-onboard/manifest.json"
+        }
+      ],
+      "created_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-17T00:00:00Z",
+      "compatibility": {
+        "agents": ["claude", "aider", "cursor", "continue"]
+      },
+      "metadata": {
+        "use_cases": [
+          "New project onboarding",
+          "Team member ramp-up",
+          "Returning to a project after a break",
+          "Quick project state overview"
+        ]
+      }
+    },
+    {
+      "id": "byterover-progress",
+      "name": "ByteRover Project Progress",
+      "version": "1.0.0",
+      "description": "Check project progress, resume paused work, and route to the next action intelligently",
+      "type": "agent-skill",
+      "author": "ByteRover Team",
+      "tags": [
+        "progress",
+        "status",
+        "byterover",
+        "routing",
+        "workflow",
+        "session-resume"
+      ],
+      "category": "productivity",
+      "path": "skills/byterover-progress",
+      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-progress",
+      "content_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-progress/SKILL.md",
+      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-progress/manifest.json",
+      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-progress/README.md",
+      "file_tree": [
+        {
+          "name": "README.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-progress/README.md"
+        },
+        {
+          "name": "SKILL.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-progress/SKILL.md"
+        },
+        {
+          "name": "manifest.json",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-progress/manifest.json"
+        }
+      ],
+      "created_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-17T00:00:00Z",
+      "compatibility": {
+        "agents": ["claude", "aider", "cursor", "continue"]
+      },
+      "metadata": {
+        "use_cases": [
+          "Session start and context recovery",
+          "Resuming paused work",
+          "Milestone progress overview",
+          "Deciding what to work on next"
+        ]
+      }
+    },
+    {
+      "id": "byterover-ship",
+      "name": "ByteRover Ship & Handoff",
+      "version": "1.0.0",
+      "description": "Complete milestones with retrospective and archival, or pause work with resumable handoff context",
+      "type": "agent-skill",
+      "author": "ByteRover Team",
+      "tags": [
+        "shipping",
+        "handoff",
+        "byterover",
+        "milestone",
+        "retrospective",
+        "session-management"
+      ],
+      "category": "productivity",
+      "path": "skills/byterover-ship",
+      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-ship",
+      "content_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-ship/SKILL.md",
+      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-ship/manifest.json",
+      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-ship/README.md",
+      "file_tree": [
+        {
+          "name": "README.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-ship/README.md"
+        },
+        {
+          "name": "SKILL.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-ship/SKILL.md"
+        },
+        {
+          "name": "manifest.json",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-ship/manifest.json"
+        }
+      ],
+      "created_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-17T00:00:00Z",
+      "compatibility": {
+        "agents": ["claude", "aider", "cursor", "continue"]
+      },
+      "metadata": {
+        "use_cases": [
+          "Milestone completion and archival",
+          "Sprint wrap-up with retrospective",
+          "Mid-phase work pause with handoff",
+          "Session end with resumable context"
+        ]
+      }
+    },
+    {
+      "id": "byterover-debug",
+      "name": "ByteRover Systematic Debugging",
+      "version": "1.0.0",
+      "description": "Investigate bugs using scientific method with persistent knowledge and hypothesis-driven analysis",
+      "type": "agent-skill",
+      "author": "ByteRover Team",
+      "tags": [
+        "debugging",
+        "bug-fixing",
+        "byterover",
+        "scientific-method",
+        "root-cause-analysis"
+      ],
+      "category": "debugging",
+      "path": "skills/byterover-debug",
+      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-debug",
+      "content_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-debug/SKILL.md",
+      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-debug/manifest.json",
+      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-debug/README.md",
+      "file_tree": [
+        {
+          "name": "README.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-debug/README.md"
+        },
+        {
+          "name": "SKILL.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-debug/SKILL.md"
+        },
+        {
+          "name": "manifest.json",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/skills/byterover-debug/manifest.json"
+        }
+      ],
+      "created_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-17T00:00:00Z",
+      "compatibility": {
+        "agents": ["claude", "aider", "cursor", "continue"]
+      },
+      "metadata": {
+        "use_cases": [
+          "Bug investigation",
+          "Test failure diagnosis",
+          "Regression debugging",
+          "Root cause analysis"
+        ]
+      }
+    },
+    {
+      "id": "typescript-kickstart",
+      "name": "TypeScript Kickstart",
+      "version": "1.0.0",
+      "description": "Context bundle for bootstrapping TypeScript projects with best practices",
+      "type": "bundle",
+      "author": "BRV Hub Team",
+      "tags": ["typescript", "setup", "best-practices", "configuration"],
+      "category": "productivity",
+      "path": "bundles/typescript-kickstart",
+      "path_url": "https://github.com/campfirein/brv-hub/tree/main/bundles/typescript-kickstart",
+      "content_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/bundles/typescript-kickstart/context.md",
+      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/bundles/typescript-kickstart/manifest.json",
+      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/bundles/typescript-kickstart/README.md",
+      "file_tree": [
+        {
+          "name": "README.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/bundles/typescript-kickstart/README.md"
+        },
+        {
+          "name": "context.md",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/bundles/typescript-kickstart/context.md"
+        },
+        {
+          "name": "manifest.json",
+          "url": "https://github.com/campfirein/brv-hub/blob/main/bundles/typescript-kickstart/manifest.json"
+        }
+      ],
+      "created_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-17T00:00:00Z",
+      "compatibility": null,
+      "metadata": {
+        "use_cases": [
+          "New TypeScript project setup",
+          "Standardizing project configuration",
+          "Learning TypeScript best practices"
+        ]
+      }
+    }
+  ]
+}
