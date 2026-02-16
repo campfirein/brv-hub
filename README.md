@@ -24,7 +24,7 @@ brv-hub/
 
 ## Web UI
 
-Browse the registry at the [BRV Hub website](https://camfirein.github.io/brv-hub/) (GitHub Pages).
+Browse the registry at the [BRV Hub website](https://campfirein.github.io/brv-hub/) (GitHub Pages).
 
 To enable GitHub Pages on your fork: Settings > Pages > Source: Deploy from branch `main`, directory `/` (root).
 
