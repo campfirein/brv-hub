@@ -71,7 +71,6 @@ for (const file of manifestFiles) {
       file_tree: fileTree,
       created_at: manifest.created_at || new Date().toISOString(),
       updated_at: manifest.updated_at || new Date().toISOString(),
-      compatibility: manifest.compatibility || null,
       dependencies: manifest.dependencies || [],
       metadata: manifest.metadata || null,
     });

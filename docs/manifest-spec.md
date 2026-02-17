@@ -51,11 +51,6 @@ Detailed description without character limit.
 ### `license` (string)
 License identifier. Defaults to `MIT`.
 
-### `compatibility` (string or object)
-Either a free-text string describing environment requirements (per [Agent Skills spec](https://agentskills.io/specification)), or a structured object:
-- `agents` (array of strings) — compatible AI agents
-- `min_version` (string) — minimum BRV CLI version (semver)
-
 ### `dependencies` (array)
 IDs of other BRV Hub entries this depends on.
 

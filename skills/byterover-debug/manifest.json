@@ -18,14 +18,6 @@
     "root-cause-analysis"
   ],
   "category": "debugging",
-  "compatibility": {
-    "agents": [
-      "claude",
-      "aider",
-      "cursor",
-      "continue"
-    ]
-  },
   "files": {
     "main": "SKILL.md",
     "readme": "README.md"

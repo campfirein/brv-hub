@@ -83,31 +83,6 @@
         "learning"
       ]
     },
-    "compatibility": {
-      "oneOf": [
-        {
-          "type": "string",
-          "maxLength": 500,
-          "description": "Environment requirements as free text (Agent Skills spec format)"
-        },
-        {
-          "type": "object",
-          "properties": {
-            "agents": {
-              "type": "array",
-              "items": { "type": "string" },
-              "description": "Compatible AI agents"
-            },
-            "min_version": {
-              "type": "string",
-              "pattern": "^\\d+\\.\\d+\\.\\d+$",
-              "description": "Minimum BRV CLI version"
-            }
-          },
-          "additionalProperties": false
-        }
-      ]
-    },
     "files": {
       "type": "object",
       "required": ["main", "readme"],

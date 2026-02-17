@@ -19,17 +19,7 @@
     "workflow"
   ],
   "category": "productivity",
-  "compatibility": {
-    "agents": [
-      "claude",
-      "aider",
-      "cursor",
-      "continue"
-    ]
-  },
-  "dependencies": [
-    "byterover-plan"
-  ],
+  "dependencies": ["byterover-plan"],
   "files": {
     "main": "SKILL.md",
     "readme": "README.md"

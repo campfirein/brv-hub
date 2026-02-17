@@ -40,7 +40,7 @@ Your `manifest.json` must include:
 | `category` | See categories below |
 | `files` | Object with `main` and `readme` (required) |
 
-Optional fields: `long_description`, `license`, `compatibility`, `dependencies`, `metadata`, `created_at`, `updated_at`. See the full [Manifest Spec](./manifest-spec.md).
+Optional fields: `long_description`, `license`, `dependencies`, `metadata`, `created_at`, `updated_at`. See the full [Manifest Spec](./manifest-spec.md).
 
 ## Categories
 
