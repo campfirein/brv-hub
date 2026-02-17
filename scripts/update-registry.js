@@ -5,7 +5,6 @@ const { globSync } = require("glob");
 const REPO_BASE_URL =
   "https://raw.githubusercontent.com/campfirein/brv-hub/main";
 const GITHUB_TREE_URL = "https://github.com/campfirein/brv-hub/tree/main";
-const GITHUB_BLOB_URL = "https://github.com/campfirein/brv-hub/blob/main";
 
 const TYPE_DIR_MAP = {
   "agent-skill": "skills",
@@ -51,7 +50,7 @@ for (const file of manifestFiles) {
     }).sort();
     const fileTree = allFiles.map((f) => ({
       name: f,
-      url: `${GITHUB_BLOB_URL}/${entryPath}/${f}`,
+      url: `${REPO_BASE_URL}/${entryPath}/${f}`,
     }));
 
     entries.push({
@@ -59,19 +58,21 @@ for (const file of manifestFiles) {
       name: manifest.name,
       version: manifest.version,
       description: manifest.description,
+      long_description: manifest.long_description || null,
       type: manifest.type,
-      author: manifest.author.name,
+      author: manifest.author,
+      license: manifest.license || "MIT",
       tags: manifest.tags,
       category: manifest.category,
       path: entryPath,
       path_url: `${GITHUB_TREE_URL}/${entryPath}`,
-      content_url: `${REPO_BASE_URL}/${entryPath}/${manifest.files.main}`,
       manifest_url: `${REPO_BASE_URL}/${entryPath}/manifest.json`,
       readme_url: `${REPO_BASE_URL}/${entryPath}/${manifest.files.readme}`,
       file_tree: fileTree,
       created_at: manifest.created_at || new Date().toISOString(),
       updated_at: manifest.updated_at || new Date().toISOString(),
       compatibility: manifest.compatibility || null,
+      dependencies: manifest.dependencies || [],
       metadata: manifest.metadata || null,
     });
   } catch (err) {

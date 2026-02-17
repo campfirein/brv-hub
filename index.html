@@ -560,7 +560,7 @@
                             entry.name,
                             entry.description,
                             entry.id,
-                            entry.author,
+                            entry.author?.name || "",
                             ...entry.tags,
                         ]
                             .join(" ")

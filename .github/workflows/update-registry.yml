@@ -4,9 +4,13 @@ on:
   push:
     branches: [main]
     paths:
-      - 'skills/**'
-      - 'bundles/**'
+      - "skills/**"
+      - "bundles/**"
   workflow_dispatch:
+
+concurrency:
+  group: update-registry
+  cancel-in-progress: false
 
 jobs:
   update-registry:
@@ -19,8 +23,8 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
-          cache: 'npm'
+          node-version: "20"
+          cache: "npm"
 
       - run: npm ci
 

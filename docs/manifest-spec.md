@@ -6,8 +6,8 @@ Every entry in BRV Hub requires a `manifest.json` file.
 
 ### `id` (string)
 Unique identifier in kebab-case. Must match the directory name. Must be unique across all entries.
-- Pattern: `^[a-z0-9][a-z0-9-]*[a-z0-9]$`
-- Length: 3-50 characters
+- Pattern: `^[a-z0-9]([a-z0-9]|-(?!-))*[a-z0-9]$` (no consecutive hyphens)
+- Length: 3-64 characters
 
 ### `name` (string)
 Human-readable name, 3-100 characters. Must be unique across all entries.
@@ -16,7 +16,7 @@ Human-readable name, 3-100 characters. Must be unique across all entries.
 Semantic version: `MAJOR.MINOR.PATCH` (e.g. `1.0.0`).
 
 ### `description` (string)
-Short description, max 140 characters.
+Description of what this entry does and when to use it, max 1024 characters.
 
 ### `type` (string)
 Content type. Determines which directory the entry belongs in.
@@ -51,10 +51,8 @@ Detailed description without character limit.
 ### `license` (string)
 License identifier. Defaults to `MIT`.
 
-### `repository` (string)
-URL to the source repository.
-
-### `compatibility` (object)
+### `compatibility` (string or object)
+Either a free-text string describing environment requirements (per [Agent Skills spec](https://agentskills.io/specification)), or a structured object:
 - `agents` (array of strings) — compatible AI agents
 - `min_version` (string) — minimum BRV CLI version (semver)
 
@@ -62,6 +60,7 @@ URL to the source repository.
 IDs of other BRV Hub entries this depends on.
 
 ### `metadata` (object)
+Arbitrary key-value mapping for additional metadata. The following keys are documented conventions:
 - `use_cases` (array of strings)
 
 ### `created_at` (string)
@@ -86,7 +85,7 @@ ISO 8601 timestamp.
   "tags": ["code-review", "quality", "security"],
   "category": "code-quality",
   "files": {
-    "main": "skill.yaml",
+    "main": "SKILL.md",
     "readme": "README.md"
   }
 }

@@ -17,10 +17,10 @@
   "properties": {
     "id": {
       "type": "string",
-      "pattern": "^[a-z0-9][a-z0-9-]*[a-z0-9]$",
+      "pattern": "^[a-z0-9]([a-z0-9]|-(?!-))*[a-z0-9]$",
       "minLength": 3,
-      "maxLength": 50,
-      "description": "Unique identifier in kebab-case. Must match the directory name."
+      "maxLength": 64,
+      "description": "Unique identifier in kebab-case. Must match the directory name. No consecutive hyphens."
     },
     "name": {
       "type": "string",
@@ -35,8 +35,8 @@
     },
     "description": {
       "type": "string",
-      "maxLength": 140,
-      "description": "Short description, max 140 characters"
+      "maxLength": 1024,
+      "description": "Short description of what this entry does and when to use it"
     },
     "long_description": {
       "type": "string",
@@ -61,10 +61,6 @@
       "type": "string",
       "default": "MIT"
     },
-    "repository": {
-      "type": "string",
-      "format": "uri"
-    },
     "tags": {
       "type": "array",
       "items": { "type": "string" },
@@ -88,20 +84,29 @@
       ]
     },
     "compatibility": {
-      "type": "object",
-      "properties": {
-        "agents": {
-          "type": "array",
-          "items": { "type": "string" },
-          "description": "Compatible AI agents"
-        },
-        "min_version": {
+      "oneOf": [
+        {
           "type": "string",
-          "pattern": "^\\d+\\.\\d+\\.\\d+$",
-          "description": "Minimum BRV CLI version"
+          "maxLength": 500,
+          "description": "Environment requirements as free text (Agent Skills spec format)"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "agents": {
+              "type": "array",
+              "items": { "type": "string" },
+              "description": "Compatible AI agents"
+            },
+            "min_version": {
+              "type": "string",
+              "pattern": "^\\d+\\.\\d+\\.\\d+$",
+              "description": "Minimum BRV CLI version"
+            }
+          },
+          "additionalProperties": false
         }
-      },
-      "additionalProperties": false
+      ]
     },
     "files": {
       "type": "object",
@@ -109,7 +114,7 @@
       "properties": {
         "main": {
           "type": "string",
-          "description": "Main content file"
+          "description": "Main content file (SKILL.md or context.md)"
         },
         "readme": {
           "type": "string",
@@ -140,7 +145,7 @@
           "items": { "type": "string" }
         }
       },
-      "additionalProperties": false
+      "additionalProperties": true
     },
     "created_at": {
       "type": "string",

@@ -15,7 +15,7 @@
 ## Directory Naming
 
 - Use kebab-case: `my-cool-skill`, not `myCoolSkill`
-- 3-50 characters
+- 3-64 characters, no consecutive hyphens
 - Must match the `id` field in your `manifest.json`
 
 ## Naming Rules
@@ -33,14 +33,14 @@ Your `manifest.json` must include:
 | `id` | Matches directory name, kebab-case, unique |
 | `name` | Human-readable name, unique across all entries |
 | `version` | Semver (e.g. `1.0.0`) |
-| `description` | Short description, max 140 chars |
+| `description` | Description of what the entry does, max 1024 chars |
 | `type` | `agent-skill` or `bundle` |
 | `author` | Object with `name` (required), `email` and `url` (optional) |
 | `tags` | 1-10 search tags |
 | `category` | See categories below |
 | `files` | Object with `main` and `readme` (required) |
 
-Optional fields: `long_description`, `license`, `repository`, `compatibility`, `dependencies`, `metadata`, `created_at`, `updated_at`. See the full [Manifest Spec](./manifest-spec.md).
+Optional fields: `long_description`, `license`, `compatibility`, `dependencies`, `metadata`, `created_at`, `updated_at`. See the full [Manifest Spec](./manifest-spec.md).
 
 ## Categories
 

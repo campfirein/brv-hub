@@ -6,7 +6,7 @@
   "scripts": {
     "validate": "node scripts/validate-manifest.js && node scripts/validate-structure.js",
     "update-registry": "node scripts/update-registry.js",
-    "test": "node scripts/validate-manifest.js",
+    "test": "node scripts/validate-manifest.js && node scripts/validate-structure.js",
     "dev": "serve ."
   },
   "devDependencies": {

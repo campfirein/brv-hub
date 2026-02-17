@@ -4,7 +4,7 @@ on:
   push:
     branches: [main]
     paths:
-      - 'registry.json'
+      - "registry.json"
 
 jobs:
   release:
@@ -24,14 +24,16 @@ jobs:
           echo "count=$COUNT" >> $GITHUB_OUTPUT
 
       - name: Create tag
+        id: tag
         run: |
           TAG="v${{ steps.registry.outputs.version }}-${{ steps.registry.outputs.count }}-$(date +%Y%m%d%H%M%S)"
           git tag $TAG
           git push origin $TAG
+          echo "name=$TAG" >> $GITHUB_OUTPUT
 
       - name: Create release
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v${{ steps.registry.outputs.version }}-${{ steps.registry.outputs.count }}-$(date +%Y%m%d%H%M%S)
+          tag_name: ${{ steps.tag.outputs.name }}
           name: Registry v${{ steps.registry.outputs.version }} (${{ steps.registry.outputs.count }} entries)
           generate_release_notes: true
