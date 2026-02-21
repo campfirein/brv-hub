@@ -18,10 +18,6 @@
     "root-cause-analysis"
   ],
   "category": "debugging",
-  "files": {
-    "main": "SKILL.md",
-    "readme": "README.md"
-  },
   "metadata": {
     "use_cases": [
       "Bug investigation",

@@ -19,10 +19,6 @@
     "quality"
   ],
   "category": "code-quality",
-  "files": {
-    "main": "SKILL.md",
-    "readme": "README.md"
-  },
   "metadata": {
     "use_cases": [
       "Pre-commit review",

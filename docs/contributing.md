@@ -8,8 +8,8 @@
    - Bundles go in `bundles/<your-bundle-id>/`
 3. **Add required files:**
    - `manifest.json` — metadata (see [Manifest Spec](./manifest-spec.md))
-   - Main content file (referenced in `manifest.json` as `files.main`)
    - `README.md` — usage documentation
+   - Main content file (`SKILL.md` for skills, `context.md` for bundles)
 4. **Open a Pull Request**
 
 ## Directory Naming
@@ -38,7 +38,6 @@ Your `manifest.json` must include:
 | `author` | Object with `name` (required), `email` and `url` (optional) |
 | `tags` | 1-10 search tags |
 | `category` | See categories below |
-| `files` | Object with `main` and `readme` (required) |
 
 Optional fields: `long_description`, `license`, `dependencies`, `metadata`, `created_at`, `updated_at`. See the full [Manifest Spec](./manifest-spec.md).
 
@@ -60,7 +59,7 @@ This checks:
 - `id` matches directory name
 - `type` matches parent directory (`agent-skill` in `skills/`, `bundle` in `bundles/`)
 - No duplicate `id` or `name` across all entries
-- All files referenced in `manifest.json` exist
+- Required files (`README.md`, `manifest.json`) exist in each entry directory
 
 ## Review Process
 

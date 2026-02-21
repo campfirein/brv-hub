@@ -19,10 +19,6 @@
     "coverage"
   ],
   "category": "analysis",
-  "files": {
-    "main": "SKILL.md",
-    "readme": "README.md"
-  },
   "metadata": {
     "use_cases": [
       "Post-refactor knowledge validation",

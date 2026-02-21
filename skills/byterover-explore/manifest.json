@@ -19,10 +19,6 @@
     "documentation"
   ],
   "category": "analysis",
-  "files": {
-    "main": "SKILL.md",
-    "readme": "README.md"
-  },
   "metadata": {
     "use_cases": [
       "New codebase onboarding",

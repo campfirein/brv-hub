@@ -19,10 +19,6 @@
     "session-management"
   ],
   "category": "productivity",
-  "files": {
-    "main": "SKILL.md",
-    "readme": "README.md"
-  },
   "metadata": {
     "use_cases": [
       "Milestone completion and archival",

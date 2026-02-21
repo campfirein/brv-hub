@@ -50,28 +50,13 @@ for (const file of manifestFiles) {
     continue;
   }
 
-  // Check that all referenced files exist
+  // Check required files exist
   const entryDir = path.dirname(fullPath);
-  const missingFiles = [];
-
-  if (manifest.files) {
-    for (const [key, value] of Object.entries(manifest.files)) {
-      if (Array.isArray(value)) {
-        for (const f of value) {
-          if (!fs.existsSync(path.join(entryDir, f))) {
-            missingFiles.push(f);
-          }
-        }
-      } else if (typeof value === 'string') {
-        if (!fs.existsSync(path.join(entryDir, value))) {
-          missingFiles.push(value);
-        }
-      }
-    }
-  }
+  const requiredFiles = ['README.md', 'manifest.json'];
+  const missingFiles = requiredFiles.filter(f => !fs.existsSync(path.join(entryDir, f)));
 
   if (missingFiles.length > 0) {
-    console.error(`\u274C Missing files in ${file}: ${missingFiles.join(', ')}`);
+    console.error(`\u274C Missing required files in ${file}: ${missingFiles.join(', ')}`);
     allValid = false;
     continue;
   }

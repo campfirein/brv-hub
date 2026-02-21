@@ -22,18 +22,11 @@ brv-hub/
 | `agent-skill` | `skills/` | Reusable skills for AI coding agents |
 | `bundle` | `bundles/` | Context packs, knowledge bundles |
 
-## Web UI
-
-Browse the registry at the [BRV Hub website](https://campfirein.github.io/brv-hub/) (GitHub Pages).
-
-To enable GitHub Pages on your fork: Settings > Pages > Source: Deploy from branch `main`, directory `/` (root).
-
 ## Quick Start
 
 ```bash
 npm install
 npm run validate    # validate all manifests and structure
-npm run dev         # preview the registry website locally
 ```
 
 ## Contributing

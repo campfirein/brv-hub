@@ -2,9 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const { globSync } = require("glob");
 
-const REPO_BASE_URL =
-  "https://raw.githubusercontent.com/campfirein/brv-hub/main";
-const GITHUB_TREE_URL = "https://github.com/campfirein/brv-hub/tree/main";
+const HUB_BASE_URL = "https://hub.byterover.dev";
 
 const TYPE_DIR_MAP = {
   "agent-skill": "skills",
@@ -50,7 +48,7 @@ for (const file of manifestFiles) {
     }).sort();
     const fileTree = allFiles.map((f) => ({
       name: f,
-      url: `${REPO_BASE_URL}/${entryPath}/${f}`,
+      url: `${HUB_BASE_URL}/r/${entryPath}/${f}`,
     }));
 
     entries.push({
@@ -65,9 +63,9 @@ for (const file of manifestFiles) {
       tags: manifest.tags,
       category: manifest.category,
       path: entryPath,
-      path_url: `${GITHUB_TREE_URL}/${entryPath}`,
-      manifest_url: `${REPO_BASE_URL}/${entryPath}/manifest.json`,
-      readme_url: `${REPO_BASE_URL}/${entryPath}/${manifest.files.readme}`,
+      path_url: `${HUB_BASE_URL}/v/${entryPath}`,
+      manifest_url: `${HUB_BASE_URL}/v/${entryPath}/manifest.json`,
+      readme_url: `${HUB_BASE_URL}/v/${entryPath}/README.md`,
       file_tree: fileTree,
       created_at: manifest.created_at || new Date().toISOString(),
       updated_at: manifest.updated_at || new Date().toISOString(),

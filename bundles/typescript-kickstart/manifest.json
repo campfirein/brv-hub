@@ -17,10 +17,6 @@
     "configuration"
   ],
   "category": "productivity",
-  "files": {
-    "main": "context.md",
-    "readme": "README.md"
-  },
   "metadata": {
     "use_cases": [
       "New TypeScript project setup",

@@ -19,10 +19,6 @@
     "architecture"
   ],
   "category": "productivity",
-  "files": {
-    "main": "SKILL.md",
-    "readme": "README.md"
-  },
   "metadata": {
     "use_cases": [
       "Feature implementation planning",

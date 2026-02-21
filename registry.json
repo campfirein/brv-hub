@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-02-17T10:19:32.319Z",
+  "generated_at": "2026-02-21T17:33:36.167Z",
   "count": 11,
   "entries": [
     {
@@ -25,21 +25,21 @@
       ],
       "category": "code-quality",
       "path": "skills/byterover-review",
-      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-review",
-      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-review/manifest.json",
-      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-review/README.md",
+      "path_url": "https://hub.byterover.dev/v/skills/byterover-review",
+      "manifest_url": "https://hub.byterover.dev/v/skills/byterover-review/manifest.json",
+      "readme_url": "https://hub.byterover.dev/v/skills/byterover-review/README.md",
       "file_tree": [
         {
           "name": "README.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-review/README.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-review/README.md"
         },
         {
           "name": "SKILL.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-review/SKILL.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-review/SKILL.md"
         },
         {
           "name": "manifest.json",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-review/manifest.json"
+          "url": "https://hub.byterover.dev/r/skills/byterover-review/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -76,21 +76,21 @@
       ],
       "category": "productivity",
       "path": "skills/byterover-plan",
-      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-plan",
-      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-plan/manifest.json",
-      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-plan/README.md",
+      "path_url": "https://hub.byterover.dev/v/skills/byterover-plan",
+      "manifest_url": "https://hub.byterover.dev/v/skills/byterover-plan/manifest.json",
+      "readme_url": "https://hub.byterover.dev/v/skills/byterover-plan/README.md",
       "file_tree": [
         {
           "name": "README.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-plan/README.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-plan/README.md"
         },
         {
           "name": "SKILL.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-plan/SKILL.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-plan/SKILL.md"
         },
         {
           "name": "manifest.json",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-plan/manifest.json"
+          "url": "https://hub.byterover.dev/r/skills/byterover-plan/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -127,21 +127,21 @@
       ],
       "category": "analysis",
       "path": "skills/byterover-explore",
-      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-explore",
-      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-explore/manifest.json",
-      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-explore/README.md",
+      "path_url": "https://hub.byterover.dev/v/skills/byterover-explore",
+      "manifest_url": "https://hub.byterover.dev/v/skills/byterover-explore/manifest.json",
+      "readme_url": "https://hub.byterover.dev/v/skills/byterover-explore/README.md",
       "file_tree": [
         {
           "name": "README.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-explore/README.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-explore/README.md"
         },
         {
           "name": "SKILL.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-explore/SKILL.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-explore/SKILL.md"
         },
         {
           "name": "manifest.json",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-explore/manifest.json"
+          "url": "https://hub.byterover.dev/r/skills/byterover-explore/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -178,21 +178,21 @@
       ],
       "category": "analysis",
       "path": "skills/byterover-audit",
-      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-audit",
-      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-audit/manifest.json",
-      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-audit/README.md",
+      "path_url": "https://hub.byterover.dev/v/skills/byterover-audit",
+      "manifest_url": "https://hub.byterover.dev/v/skills/byterover-audit/manifest.json",
+      "readme_url": "https://hub.byterover.dev/v/skills/byterover-audit/README.md",
       "file_tree": [
         {
           "name": "README.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-audit/README.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-audit/README.md"
         },
         {
           "name": "SKILL.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-audit/SKILL.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-audit/SKILL.md"
         },
         {
           "name": "manifest.json",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-audit/manifest.json"
+          "url": "https://hub.byterover.dev/r/skills/byterover-audit/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -229,21 +229,21 @@
       ],
       "category": "productivity",
       "path": "skills/byterover-milestone",
-      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-milestone",
-      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-milestone/manifest.json",
-      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-milestone/README.md",
+      "path_url": "https://hub.byterover.dev/v/skills/byterover-milestone",
+      "manifest_url": "https://hub.byterover.dev/v/skills/byterover-milestone/manifest.json",
+      "readme_url": "https://hub.byterover.dev/v/skills/byterover-milestone/README.md",
       "file_tree": [
         {
           "name": "README.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-milestone/README.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-milestone/README.md"
         },
         {
           "name": "SKILL.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-milestone/SKILL.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-milestone/SKILL.md"
         },
         {
           "name": "manifest.json",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-milestone/manifest.json"
+          "url": "https://hub.byterover.dev/r/skills/byterover-milestone/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -280,21 +280,21 @@
       ],
       "category": "productivity",
       "path": "skills/byterover-execute",
-      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-execute",
-      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-execute/manifest.json",
-      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-execute/README.md",
+      "path_url": "https://hub.byterover.dev/v/skills/byterover-execute",
+      "manifest_url": "https://hub.byterover.dev/v/skills/byterover-execute/manifest.json",
+      "readme_url": "https://hub.byterover.dev/v/skills/byterover-execute/README.md",
       "file_tree": [
         {
           "name": "README.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-execute/README.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-execute/README.md"
         },
         {
           "name": "SKILL.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-execute/SKILL.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-execute/SKILL.md"
         },
         {
           "name": "manifest.json",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-execute/manifest.json"
+          "url": "https://hub.byterover.dev/r/skills/byterover-execute/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -333,21 +333,21 @@
       ],
       "category": "learning",
       "path": "skills/byterover-onboard",
-      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-onboard",
-      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-onboard/manifest.json",
-      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-onboard/README.md",
+      "path_url": "https://hub.byterover.dev/v/skills/byterover-onboard",
+      "manifest_url": "https://hub.byterover.dev/v/skills/byterover-onboard/manifest.json",
+      "readme_url": "https://hub.byterover.dev/v/skills/byterover-onboard/README.md",
       "file_tree": [
         {
           "name": "README.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-onboard/README.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-onboard/README.md"
         },
         {
           "name": "SKILL.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-onboard/SKILL.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-onboard/SKILL.md"
         },
         {
           "name": "manifest.json",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-onboard/manifest.json"
+          "url": "https://hub.byterover.dev/r/skills/byterover-onboard/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -384,21 +384,21 @@
       ],
       "category": "productivity",
       "path": "skills/byterover-progress",
-      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-progress",
-      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-progress/manifest.json",
-      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-progress/README.md",
+      "path_url": "https://hub.byterover.dev/v/skills/byterover-progress",
+      "manifest_url": "https://hub.byterover.dev/v/skills/byterover-progress/manifest.json",
+      "readme_url": "https://hub.byterover.dev/v/skills/byterover-progress/README.md",
       "file_tree": [
         {
           "name": "README.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-progress/README.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-progress/README.md"
         },
         {
           "name": "SKILL.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-progress/SKILL.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-progress/SKILL.md"
         },
         {
           "name": "manifest.json",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-progress/manifest.json"
+          "url": "https://hub.byterover.dev/r/skills/byterover-progress/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -435,21 +435,21 @@
       ],
       "category": "productivity",
       "path": "skills/byterover-ship",
-      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-ship",
-      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-ship/manifest.json",
-      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-ship/README.md",
+      "path_url": "https://hub.byterover.dev/v/skills/byterover-ship",
+      "manifest_url": "https://hub.byterover.dev/v/skills/byterover-ship/manifest.json",
+      "readme_url": "https://hub.byterover.dev/v/skills/byterover-ship/README.md",
       "file_tree": [
         {
           "name": "README.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-ship/README.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-ship/README.md"
         },
         {
           "name": "SKILL.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-ship/SKILL.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-ship/SKILL.md"
         },
         {
           "name": "manifest.json",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-ship/manifest.json"
+          "url": "https://hub.byterover.dev/r/skills/byterover-ship/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -485,21 +485,21 @@
       ],
       "category": "debugging",
       "path": "skills/byterover-debug",
-      "path_url": "https://github.com/campfirein/brv-hub/tree/main/skills/byterover-debug",
-      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-debug/manifest.json",
-      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-debug/README.md",
+      "path_url": "https://hub.byterover.dev/v/skills/byterover-debug",
+      "manifest_url": "https://hub.byterover.dev/v/skills/byterover-debug/manifest.json",
+      "readme_url": "https://hub.byterover.dev/v/skills/byterover-debug/README.md",
       "file_tree": [
         {
           "name": "README.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-debug/README.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-debug/README.md"
         },
         {
           "name": "SKILL.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-debug/SKILL.md"
+          "url": "https://hub.byterover.dev/r/skills/byterover-debug/SKILL.md"
         },
         {
           "name": "manifest.json",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/skills/byterover-debug/manifest.json"
+          "url": "https://hub.byterover.dev/r/skills/byterover-debug/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -534,21 +534,21 @@
       ],
       "category": "productivity",
       "path": "bundles/typescript-kickstart",
-      "path_url": "https://github.com/campfirein/brv-hub/tree/main/bundles/typescript-kickstart",
-      "manifest_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/bundles/typescript-kickstart/manifest.json",
-      "readme_url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/bundles/typescript-kickstart/README.md",
+      "path_url": "https://hub.byterover.dev/v/bundles/typescript-kickstart",
+      "manifest_url": "https://hub.byterover.dev/v/bundles/typescript-kickstart/manifest.json",
+      "readme_url": "https://hub.byterover.dev/v/bundles/typescript-kickstart/README.md",
       "file_tree": [
         {
           "name": "README.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/bundles/typescript-kickstart/README.md"
+          "url": "https://hub.byterover.dev/r/bundles/typescript-kickstart/README.md"
         },
         {
           "name": "context.md",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/bundles/typescript-kickstart/context.md"
+          "url": "https://hub.byterover.dev/r/bundles/typescript-kickstart/context.md"
         },
         {
           "name": "manifest.json",
-          "url": "https://raw.githubusercontent.com/campfirein/brv-hub/main/bundles/typescript-kickstart/manifest.json"
+          "url": "https://hub.byterover.dev/r/bundles/typescript-kickstart/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",

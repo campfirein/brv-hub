@@ -20,10 +20,6 @@
   ],
   "category": "productivity",
   "dependencies": ["byterover-plan"],
-  "files": {
-    "main": "SKILL.md",
-    "readme": "README.md"
-  },
   "metadata": {
     "use_cases": [
       "Executing planned implementation phases",

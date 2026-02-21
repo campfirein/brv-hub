@@ -37,12 +37,6 @@ Content type. Determines which directory the entry belongs in.
 ### `category` (string)
 One of: `productivity`, `code-quality`, `testing`, `documentation`, `refactoring`, `debugging`, `deployment`, `analysis`, `security`, `learning`.
 
-### `files` (object)
-- `main` (string, required) — main content file
-- `readme` (string, required) — documentation file
-- `examples` (array of strings, optional) — example files
-- `config` (string, optional) — configuration template
-
 ## Optional Fields
 
 ### `long_description` (string)
@@ -78,10 +72,6 @@ ISO 8601 timestamp.
     "url": "https://github.com/campfirein"
   },
   "tags": ["code-review", "quality", "security"],
-  "category": "code-quality",
-  "files": {
-    "main": "SKILL.md",
-    "readme": "README.md"
-  }
+  "category": "code-quality"
 }
 ```

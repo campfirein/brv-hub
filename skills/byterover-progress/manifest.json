@@ -19,10 +19,6 @@
     "session-resume"
   ],
   "category": "productivity",
-  "files": {
-    "main": "SKILL.md",
-    "readme": "README.md"
-  },
   "metadata": {
     "use_cases": [
       "Session start and context recovery",

@@ -19,10 +19,6 @@
     "getting-started"
   ],
   "category": "learning",
-  "files": {
-    "main": "SKILL.md",
-    "readme": "README.md"
-  },
   "metadata": {
     "use_cases": [
       "New project onboarding",

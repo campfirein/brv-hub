@@ -6,13 +6,11 @@
   "scripts": {
     "validate": "node scripts/validate-manifest.js && node scripts/validate-structure.js",
     "update-registry": "node scripts/update-registry.js",
-    "test": "node scripts/validate-manifest.js && node scripts/validate-structure.js",
-    "dev": "serve ."
+    "test": "node scripts/validate-manifest.js && node scripts/validate-structure.js"
   },
   "devDependencies": {
     "ajv": "^8.12.0",
     "ajv-formats": "^3.0.1",
-    "glob": "^10.3.10",
-    "serve": "^14.2.5"
+    "glob": "^10.3.10"
   }
 }

@@ -11,8 +11,7 @@
     "type",
     "author",
     "tags",
-    "category",
-    "files"
+    "category"
   ],
   "properties": {
     "id": {
@@ -82,30 +81,6 @@
         "security",
         "learning"
       ]
-    },
-    "files": {
-      "type": "object",
-      "required": ["main", "readme"],
-      "properties": {
-        "main": {
-          "type": "string",
-          "description": "Main content file (SKILL.md or context.md)"
-        },
-        "readme": {
-          "type": "string",
-          "description": "Documentation file"
-        },
-        "examples": {
-          "type": "array",
-          "items": { "type": "string" },
-          "description": "Example files"
-        },
-        "config": {
-          "type": "string",
-          "description": "Configuration template"
-        }
-      },
-      "additionalProperties": false
     },
     "dependencies": {
       "type": "array",
