@@ -38,7 +38,7 @@ for (const file of manifestFiles) {
       continue;
     }
 
-    // Scan directory for file tree (exclude manifest.json itself and hidden files)
+    // Scan directory for file tree (exclude manifest.json, README.md, and hidden files)
     const entryDir = path.dirname(fullPath);
     const entryPath = `${parentDir}/${entryId}`;
     const allFiles = globSync(`**/*`, {
@@ -46,10 +46,13 @@ for (const file of manifestFiles) {
       nodir: true,
       dot: false,
     }).sort();
-    const fileTree = allFiles.map((f) => ({
-      name: f,
-      url: `${HUB_BASE_URL}/r/${entryPath}/${f}`,
-    }));
+    const excludedFiles = new Set(["manifest.json", "README.md"]);
+    const fileTree = allFiles
+      .filter((f) => !excludedFiles.has(f))
+      .map((f) => ({
+        name: f,
+        url: `${HUB_BASE_URL}/r/${entryPath}/${f}`,
+      }));
 
     entries.push({
       id: manifest.id,
