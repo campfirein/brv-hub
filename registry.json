@@ -1,6 +1,6 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-02-21T18:13:06.145Z",
+  "generated_at": "2026-02-21T18:32:49.275Z",
   "count": 11,
   "entries": [
     {
@@ -30,16 +30,8 @@
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-review/README.md",
       "file_tree": [
         {
-          "name": "README.md",
-          "url": "https://hub.byterover.dev/r/skills/byterover-review/README.md"
-        },
-        {
           "name": "SKILL.md",
           "url": "https://hub.byterover.dev/r/skills/byterover-review/SKILL.md"
-        },
-        {
-          "name": "manifest.json",
-          "url": "https://hub.byterover.dev/r/skills/byterover-review/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -81,16 +73,8 @@
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-plan/README.md",
       "file_tree": [
         {
-          "name": "README.md",
-          "url": "https://hub.byterover.dev/r/skills/byterover-plan/README.md"
-        },
-        {
           "name": "SKILL.md",
           "url": "https://hub.byterover.dev/r/skills/byterover-plan/SKILL.md"
-        },
-        {
-          "name": "manifest.json",
-          "url": "https://hub.byterover.dev/r/skills/byterover-plan/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -132,16 +116,8 @@
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-explore/README.md",
       "file_tree": [
         {
-          "name": "README.md",
-          "url": "https://hub.byterover.dev/r/skills/byterover-explore/README.md"
-        },
-        {
           "name": "SKILL.md",
           "url": "https://hub.byterover.dev/r/skills/byterover-explore/SKILL.md"
-        },
-        {
-          "name": "manifest.json",
-          "url": "https://hub.byterover.dev/r/skills/byterover-explore/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -183,16 +159,8 @@
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-audit/README.md",
       "file_tree": [
         {
-          "name": "README.md",
-          "url": "https://hub.byterover.dev/r/skills/byterover-audit/README.md"
-        },
-        {
           "name": "SKILL.md",
           "url": "https://hub.byterover.dev/r/skills/byterover-audit/SKILL.md"
-        },
-        {
-          "name": "manifest.json",
-          "url": "https://hub.byterover.dev/r/skills/byterover-audit/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -234,16 +202,8 @@
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-milestone/README.md",
       "file_tree": [
         {
-          "name": "README.md",
-          "url": "https://hub.byterover.dev/r/skills/byterover-milestone/README.md"
-        },
-        {
           "name": "SKILL.md",
           "url": "https://hub.byterover.dev/r/skills/byterover-milestone/SKILL.md"
-        },
-        {
-          "name": "manifest.json",
-          "url": "https://hub.byterover.dev/r/skills/byterover-milestone/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -285,16 +245,8 @@
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-execute/README.md",
       "file_tree": [
         {
-          "name": "README.md",
-          "url": "https://hub.byterover.dev/r/skills/byterover-execute/README.md"
-        },
-        {
           "name": "SKILL.md",
           "url": "https://hub.byterover.dev/r/skills/byterover-execute/SKILL.md"
-        },
-        {
-          "name": "manifest.json",
-          "url": "https://hub.byterover.dev/r/skills/byterover-execute/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -338,16 +290,8 @@
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-onboard/README.md",
       "file_tree": [
         {
-          "name": "README.md",
-          "url": "https://hub.byterover.dev/r/skills/byterover-onboard/README.md"
-        },
-        {
           "name": "SKILL.md",
           "url": "https://hub.byterover.dev/r/skills/byterover-onboard/SKILL.md"
-        },
-        {
-          "name": "manifest.json",
-          "url": "https://hub.byterover.dev/r/skills/byterover-onboard/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -389,16 +333,8 @@
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-progress/README.md",
       "file_tree": [
         {
-          "name": "README.md",
-          "url": "https://hub.byterover.dev/r/skills/byterover-progress/README.md"
-        },
-        {
           "name": "SKILL.md",
           "url": "https://hub.byterover.dev/r/skills/byterover-progress/SKILL.md"
-        },
-        {
-          "name": "manifest.json",
-          "url": "https://hub.byterover.dev/r/skills/byterover-progress/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -440,16 +376,8 @@
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-ship/README.md",
       "file_tree": [
         {
-          "name": "README.md",
-          "url": "https://hub.byterover.dev/r/skills/byterover-ship/README.md"
-        },
-        {
           "name": "SKILL.md",
           "url": "https://hub.byterover.dev/r/skills/byterover-ship/SKILL.md"
-        },
-        {
-          "name": "manifest.json",
-          "url": "https://hub.byterover.dev/r/skills/byterover-ship/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -490,16 +418,8 @@
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-debug/README.md",
       "file_tree": [
         {
-          "name": "README.md",
-          "url": "https://hub.byterover.dev/r/skills/byterover-debug/README.md"
-        },
-        {
           "name": "SKILL.md",
           "url": "https://hub.byterover.dev/r/skills/byterover-debug/SKILL.md"
-        },
-        {
-          "name": "manifest.json",
-          "url": "https://hub.byterover.dev/r/skills/byterover-debug/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
@@ -539,16 +459,8 @@
       "readme_url": "https://hub.byterover.dev/v/bundles/typescript-kickstart/README.md",
       "file_tree": [
         {
-          "name": "README.md",
-          "url": "https://hub.byterover.dev/r/bundles/typescript-kickstart/README.md"
-        },
-        {
           "name": "context.md",
           "url": "https://hub.byterover.dev/r/bundles/typescript-kickstart/context.md"
-        },
-        {
-          "name": "manifest.json",
-          "url": "https://hub.byterover.dev/r/bundles/typescript-kickstart/manifest.json"
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
