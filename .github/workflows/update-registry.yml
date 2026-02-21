@@ -8,6 +8,9 @@ on:
       - "bundles/**"
   workflow_dispatch:
 
+permissions:
+  contents: write
+
 concurrency:
   group: update-registry
   cancel-in-progress: false
