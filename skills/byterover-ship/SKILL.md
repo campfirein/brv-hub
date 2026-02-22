@@ -150,3 +150,4 @@ Work paused at Phase [N], Task [X]/[Y].
 6. **Store milestone records permanently** — Curate with enough detail for future reference
 7. **Max 5 files per curate** — Break down milestone summaries into multiple commands
 8. **Never read secrets** — Skip `.env`, credential files, and similar
+9. **Verify curations** — After storing critical context, run `brv curate view <logId>` to confirm what was stored (logId is printed by `brv curate` on completion). Run `brv curate view --help` to see all options.

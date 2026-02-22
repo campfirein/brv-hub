@@ -118,3 +118,4 @@ Clearly state:
 5. **Pending items are knowledge** — Store and retrieve them via `brv curate` / `brv query`
 6. **Max 5 files per curate** — Break down large status updates
 7. **Never read secrets** — Skip `.env`, credential files, and similar
+8. **Verify curations** — After storing critical context, run `brv curate view <logId>` to confirm what was stored (logId is printed by `brv curate` on completion). Run `brv curate view --help` to see all options.

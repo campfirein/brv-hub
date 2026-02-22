@@ -139,3 +139,4 @@ Present to the user:
 6. **Follow the plan** — Implement what the plan specifies, raise concerns before deviating
 7. **Max 5 files per curate** — Break down task and phase summaries
 8. **Never read secrets** — Skip `.env`, credential files, and similar
+9. **Verify curations** — After storing critical context, run `brv curate view <logId>` to confirm what was stored (logId is printed by `brv curate` on completion). Run `brv curate view --help` to see all options.

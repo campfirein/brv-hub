@@ -122,3 +122,4 @@ Present to the user:
 6. **Store everything** — Curate project, requirements, roadmap, and decisions via `brv curate`
 7. **Max 5 files per curate** — Break down large milestone definitions into multiple curate commands
 8. **Never read secrets** — Skip `.env`, credential files, and similar
+9. **Verify curations** — After storing critical context, run `brv curate view <logId>` to confirm what was stored (logId is printed by `brv curate` on completion). Run `brv curate view --help` to see all options.

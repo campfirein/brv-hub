@@ -134,3 +134,4 @@ After presenting the report:
 4. **Reference specific file paths** — Every claim must reference the actual file checked
 5. **Be honest about coverage** — Don't inflate coverage ratings; if knowledge is vague, rate it as partial
 6. **Max 5 files per curate** — Break down large updates into multiple `brv curate` commands
+7. **Verify curations** — After storing critical context, run `brv curate view <logId>` to confirm what was stored (logId is printed by `brv curate` on completion). Run `brv curate view --help` to see all options.
