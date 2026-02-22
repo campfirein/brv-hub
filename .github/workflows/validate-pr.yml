@@ -3,8 +3,11 @@ name: Validate PR
 on:
   pull_request:
     paths:
-      - 'skills/**'
-      - 'bundles/**'
+      - "skills/**"
+      - "bundles/**"
+
+permissions:
+  pull-requests: write
 
 jobs:
   validate:
@@ -15,7 +18,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - run: npm ci
 
