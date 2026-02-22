@@ -137,3 +137,4 @@ Ask the user to review and approve before execution.
 5. **Right-size tasks** — 3-7 tasks per plan, 15-60 minutes each
 6. **Store the plan** — Always curate the plan via `brv curate` for future reference
 7. **Max 5 files per curate** — Break down large plans into multiple curate operations
+8. **Verify curations** — After storing critical context, run `brv curate view <logId>` to confirm what was stored (logId is printed by `brv curate` on completion). Run `brv curate view --help` to see all options.

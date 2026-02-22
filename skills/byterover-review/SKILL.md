@@ -159,3 +159,4 @@ Present a structured review:
 5. **Curate discoveries** — Store genuinely new patterns, not noise
 6. **Max 5 files per curate** — Break down large curate operations
 7. **No false positives** — Only flag issues where a documented standard exists or a clear security concern is present
+8. **Verify curations** — After storing critical context, run `brv curate view <logId>` to confirm what was stored (logId is printed by `brv curate` on completion). Run `brv curate view --help` to see all options.

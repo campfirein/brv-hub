@@ -143,3 +143,4 @@ Report to the user:
 7. **Fix the cause, not the symptom** — A try/catch that swallows the error is not a fix
 8. **Verify the fix** — Run tests; an untested fix is an assumption
 9. **Max 5 files per curate** — Break down findings into multiple curate operations if needed
+10. **Verify curations** — After storing critical context, run `brv curate view <logId>` to confirm what was stored (logId is printed by `brv curate` on completion). Run `brv curate view --help` to see all options.

@@ -143,3 +143,4 @@ Present the full onboarding summary to the user:
 6. **Suggest explore, not manual investigation** — When gaps exist, recommend `byterover-explore` rather than asking the agent to manually explore
 7. **Curate discoveries** — If new insights emerge during onboarding, store them
 8. **Max 5 files per curate** — Break down large curate operations if needed
+9. **Verify curations** — After storing critical context, run `brv curate view <logId>` to confirm what was stored (logId is printed by `brv curate` on completion). Run `brv curate view --help` to see all options.

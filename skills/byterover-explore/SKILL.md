@@ -172,3 +172,4 @@ Report to the user:
 4. **Break down large contexts** — Run multiple `brv curate` commands rather than one massive one
 5. **Let ByteRover read files** — Use `-f` flags to let ByteRover read files directly (max 5 per command)
 6. **Be specific in queries** — Use precise questions for faster, more relevant results
+7. **Verify curations** — After storing critical context, run `brv curate view <logId>` to confirm what was stored (logId is printed by `brv curate` on completion). Run `brv curate view --help` to see all options.
