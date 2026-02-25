@@ -6,6 +6,8 @@ on:
     paths:
       - "skills/**"
       - "bundles/**"
+      - "scripts/update-registry.js"
+      - "schemas/**"
   workflow_dispatch:
 
 permissions:

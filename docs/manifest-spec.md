@@ -52,12 +52,6 @@ IDs of other BRV Hub entries this depends on.
 Arbitrary key-value mapping for additional metadata. The following keys are documented conventions:
 - `use_cases` (array of strings)
 
-### `created_at` (string)
-ISO 8601 timestamp.
-
-### `updated_at` (string)
-ISO 8601 timestamp.
-
 ## Example
 
 ```json

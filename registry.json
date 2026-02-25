@@ -12,7 +12,7 @@
       "type": "agent-skill",
       "author": {
         "name": "ByteRover Team",
-        "url": "https://github.com/byterover"
+        "url": "https://github.com/campfirein"
       },
       "license": "MIT",
       "tags": [
@@ -25,7 +25,7 @@
       ],
       "category": "code-quality",
       "path": "skills/byterover-review",
-      "path_url": "https://hub.byterover.dev/v/skills/byterover-review",
+      "path_url": "https://hub.byterover.dev/byterover-review",
       "manifest_url": "https://hub.byterover.dev/v/skills/byterover-review/manifest.json",
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-review/README.md",
       "file_tree": [
@@ -35,7 +35,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-25T13:38:36.020Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -55,7 +55,7 @@
       "type": "agent-skill",
       "author": {
         "name": "ByteRover Team",
-        "url": "https://github.com/byterover"
+        "url": "https://github.com/campfirein"
       },
       "license": "MIT",
       "tags": [
@@ -68,7 +68,7 @@
       ],
       "category": "productivity",
       "path": "skills/byterover-plan",
-      "path_url": "https://hub.byterover.dev/v/skills/byterover-plan",
+      "path_url": "https://hub.byterover.dev/byterover-plan",
       "manifest_url": "https://hub.byterover.dev/v/skills/byterover-plan/manifest.json",
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-plan/README.md",
       "file_tree": [
@@ -78,7 +78,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-25T13:38:36.020Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -98,7 +98,7 @@
       "type": "agent-skill",
       "author": {
         "name": "ByteRover Team",
-        "url": "https://github.com/byterover"
+        "url": "https://github.com/campfirein"
       },
       "license": "MIT",
       "tags": [
@@ -111,7 +111,7 @@
       ],
       "category": "analysis",
       "path": "skills/byterover-explore",
-      "path_url": "https://hub.byterover.dev/v/skills/byterover-explore",
+      "path_url": "https://hub.byterover.dev/byterover-explore",
       "manifest_url": "https://hub.byterover.dev/v/skills/byterover-explore/manifest.json",
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-explore/README.md",
       "file_tree": [
@@ -121,7 +121,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-25T13:38:36.020Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -154,7 +154,7 @@
       ],
       "category": "analysis",
       "path": "skills/byterover-audit",
-      "path_url": "https://hub.byterover.dev/v/skills/byterover-audit",
+      "path_url": "https://hub.byterover.dev/byterover-audit",
       "manifest_url": "https://hub.byterover.dev/v/skills/byterover-audit/manifest.json",
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-audit/README.md",
       "file_tree": [
@@ -164,7 +164,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-25T13:38:36.020Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -184,7 +184,7 @@
       "type": "agent-skill",
       "author": {
         "name": "ByteRover Team",
-        "url": "https://github.com/byterover"
+        "url": "https://github.com/campfirein"
       },
       "license": "MIT",
       "tags": [
@@ -197,7 +197,7 @@
       ],
       "category": "productivity",
       "path": "skills/byterover-milestone",
-      "path_url": "https://hub.byterover.dev/v/skills/byterover-milestone",
+      "path_url": "https://hub.byterover.dev/byterover-milestone",
       "manifest_url": "https://hub.byterover.dev/v/skills/byterover-milestone/manifest.json",
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-milestone/README.md",
       "file_tree": [
@@ -207,7 +207,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-25T13:38:36.020Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -227,7 +227,7 @@
       "type": "agent-skill",
       "author": {
         "name": "ByteRover Team",
-        "url": "https://github.com/byterover"
+        "url": "https://github.com/campfirein"
       },
       "license": "MIT",
       "tags": [
@@ -240,7 +240,7 @@
       ],
       "category": "productivity",
       "path": "skills/byterover-execute",
-      "path_url": "https://hub.byterover.dev/v/skills/byterover-execute",
+      "path_url": "https://hub.byterover.dev/byterover-execute",
       "manifest_url": "https://hub.byterover.dev/v/skills/byterover-execute/manifest.json",
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-execute/README.md",
       "file_tree": [
@@ -250,7 +250,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-25T13:38:36.020Z",
       "dependencies": [
         "byterover-plan"
       ],
@@ -272,7 +272,7 @@
       "type": "agent-skill",
       "author": {
         "name": "ByteRover Team",
-        "url": "https://github.com/byterover"
+        "url": "https://github.com/campfirein"
       },
       "license": "MIT",
       "tags": [
@@ -285,7 +285,7 @@
       ],
       "category": "learning",
       "path": "skills/byterover-onboard",
-      "path_url": "https://hub.byterover.dev/v/skills/byterover-onboard",
+      "path_url": "https://hub.byterover.dev/byterover-onboard",
       "manifest_url": "https://hub.byterover.dev/v/skills/byterover-onboard/manifest.json",
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-onboard/README.md",
       "file_tree": [
@@ -295,7 +295,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-25T13:38:36.020Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -315,7 +315,7 @@
       "type": "agent-skill",
       "author": {
         "name": "ByteRover Team",
-        "url": "https://github.com/byterover"
+        "url": "https://github.com/campfirein"
       },
       "license": "MIT",
       "tags": [
@@ -328,7 +328,7 @@
       ],
       "category": "productivity",
       "path": "skills/byterover-progress",
-      "path_url": "https://hub.byterover.dev/v/skills/byterover-progress",
+      "path_url": "https://hub.byterover.dev/byterover-progress",
       "manifest_url": "https://hub.byterover.dev/v/skills/byterover-progress/manifest.json",
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-progress/README.md",
       "file_tree": [
@@ -338,7 +338,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-25T13:38:36.020Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -358,7 +358,7 @@
       "type": "agent-skill",
       "author": {
         "name": "ByteRover Team",
-        "url": "https://github.com/byterover"
+        "url": "https://github.com/campfirein"
       },
       "license": "MIT",
       "tags": [
@@ -371,7 +371,7 @@
       ],
       "category": "productivity",
       "path": "skills/byterover-ship",
-      "path_url": "https://hub.byterover.dev/v/skills/byterover-ship",
+      "path_url": "https://hub.byterover.dev/byterover-ship",
       "manifest_url": "https://hub.byterover.dev/v/skills/byterover-ship/manifest.json",
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-ship/README.md",
       "file_tree": [
@@ -381,7 +381,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-25T13:38:36.020Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -401,7 +401,7 @@
       "type": "agent-skill",
       "author": {
         "name": "ByteRover Team",
-        "url": "https://github.com/byterover"
+        "url": "https://github.com/campfirein"
       },
       "license": "MIT",
       "tags": [
@@ -413,7 +413,7 @@
       ],
       "category": "debugging",
       "path": "skills/byterover-debug",
-      "path_url": "https://hub.byterover.dev/v/skills/byterover-debug",
+      "path_url": "https://hub.byterover.dev/byterover-debug",
       "manifest_url": "https://hub.byterover.dev/v/skills/byterover-debug/manifest.json",
       "readme_url": "https://hub.byterover.dev/v/skills/byterover-debug/README.md",
       "file_tree": [
@@ -423,7 +423,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-25T13:38:36.020Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -454,7 +454,7 @@
       ],
       "category": "productivity",
       "path": "bundles/typescript-kickstart",
-      "path_url": "https://hub.byterover.dev/v/bundles/typescript-kickstart",
+      "path_url": "https://hub.byterover.dev/typescript-kickstart",
       "manifest_url": "https://hub.byterover.dev/v/bundles/typescript-kickstart/manifest.json",
       "readme_url": "https://hub.byterover.dev/v/bundles/typescript-kickstart/README.md",
       "file_tree": [
@@ -464,7 +464,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-02-17T00:00:00Z",
+      "updated_at": "2026-02-25T13:38:36.020Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [

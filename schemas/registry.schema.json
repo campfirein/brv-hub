@@ -1,0 +1,152 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "BRV Hub Registry",
+  "description": "Schema for the auto-generated registry.json catalog",
+  "type": "object",
+  "required": ["version", "generated_at", "count", "entries"],
+  "properties": {
+    "version": {
+      "type": "string",
+      "description": "Registry format version"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Timestamp when the registry was generated"
+    },
+    "count": {
+      "type": "integer",
+      "minimum": 0,
+      "description": "Number of entries in the registry"
+    },
+    "entries": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/entry"
+      }
+    }
+  },
+  "additionalProperties": false,
+  "$defs": {
+    "entry": {
+      "type": "object",
+      "required": [
+        "id",
+        "name",
+        "version",
+        "description",
+        "type",
+        "author",
+        "tags",
+        "category",
+        "path",
+        "path_url",
+        "manifest_url",
+        "readme_url",
+        "file_tree",
+        "created_at",
+        "updated_at",
+        "dependencies"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier in kebab-case"
+        },
+        "name": {
+          "type": "string",
+          "description": "Human-readable name"
+        },
+        "version": {
+          "type": "string",
+          "pattern": "^\\d+\\.\\d+\\.\\d+$",
+          "description": "Semantic version"
+        },
+        "description": {
+          "type": "string",
+          "description": "Short description"
+        },
+        "long_description": {
+          "type": ["string", "null"],
+          "description": "Detailed description"
+        },
+        "type": {
+          "type": "string",
+          "enum": ["agent-skill", "bundle"]
+        },
+        "author": {
+          "type": "object",
+          "required": ["name"],
+          "properties": {
+            "name": { "type": "string" },
+            "email": { "type": "string", "format": "email" },
+            "url": { "type": "string", "format": "uri" }
+          },
+          "additionalProperties": false
+        },
+        "license": {
+          "type": "string"
+        },
+        "tags": {
+          "type": "array",
+          "items": { "type": "string" }
+        },
+        "category": {
+          "type": "string"
+        },
+        "path": {
+          "type": "string",
+          "description": "Relative path to the entry directory (e.g. skills/my-skill)"
+        },
+        "path_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Public URL for the entry"
+        },
+        "manifest_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Public URL for the manifest file"
+        },
+        "readme_url": {
+          "type": "string",
+          "format": "uri",
+          "description": "Public URL for the README file"
+        },
+        "file_tree": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "url"],
+            "properties": {
+              "name": { "type": "string" },
+              "url": { "type": "string", "format": "uri" }
+            },
+            "additionalProperties": false
+          },
+          "description": "List of content files (excludes manifest.json and README.md)"
+        },
+        "created_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Auto-generated creation timestamp"
+        },
+        "updated_at": {
+          "type": "string",
+          "format": "date-time",
+          "description": "Auto-generated last update timestamp"
+        },
+        "dependencies": {
+          "type": "array",
+          "items": { "type": "string" },
+          "description": "IDs of other entries this depends on"
+        },
+        "metadata": {
+          "type": ["object", "null"],
+          "description": "Arbitrary additional metadata"
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

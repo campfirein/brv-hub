@@ -52,7 +52,12 @@ for (const file of manifestFiles) {
 
   // Check required files exist
   const entryDir = path.dirname(fullPath);
-  const requiredFiles = ['README.md', 'manifest.json'];
+  const CONTENT_FILE_MAP = {
+    'agent-skill': 'SKILL.md',
+    'bundle': 'context.md'
+  };
+  const contentFile = CONTENT_FILE_MAP[manifest.type];
+  const requiredFiles = ['README.md', 'manifest.json', contentFile].filter(Boolean);
   const missingFiles = requiredFiles.filter(f => !fs.existsSync(path.join(entryDir, f)));
 
   if (missingFiles.length > 0) {

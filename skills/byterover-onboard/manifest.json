@@ -7,7 +7,7 @@
   "type": "agent-skill",
   "author": {
     "name": "ByteRover Team",
-    "url": "https://github.com/byterover"
+    "url": "https://github.com/campfirein"
   },
   "license": "MIT",
   "tags": [
@@ -26,7 +26,5 @@
       "Returning to a project after a break",
       "Quick project state overview"
     ]
-  },
-  "created_at": "2026-02-17T00:00:00Z",
-  "updated_at": "2026-02-17T00:00:00Z"
+  }
 }

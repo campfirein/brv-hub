@@ -39,7 +39,7 @@ Your `manifest.json` must include:
 | `tags` | 1-10 search tags |
 | `category` | See categories below |
 
-Optional fields: `long_description`, `license`, `dependencies`, `metadata`, `created_at`, `updated_at`. See the full [Manifest Spec](./manifest-spec.md).
+Optional fields: `long_description`, `license`, `dependencies`, `metadata`. See the full [Manifest Spec](./manifest-spec.md).
 
 ## Categories
 
@@ -59,7 +59,7 @@ This checks:
 - `id` matches directory name
 - `type` matches parent directory (`agent-skill` in `skills/`, `bundle` in `bundles/`)
 - No duplicate `id` or `name` across all entries
-- Required files (`README.md`, `manifest.json`) exist in each entry directory
+- Required files (`README.md`, `manifest.json`, content file) exist in each entry directory
 
 ## Review Process
 
