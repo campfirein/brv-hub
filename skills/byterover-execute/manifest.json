@@ -19,7 +19,7 @@
     "workflow"
   ],
   "category": "productivity",
-  "dependencies": ["byterover-plan"],
+  "dependencies": [],
   "metadata": {
     "use_cases": [
       "Executing planned implementation phases",
