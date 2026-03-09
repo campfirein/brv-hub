@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-02-28T02:17:27.877Z",
-  "count": 11,
+  "generated_at": "2026-03-09T08:40:17.412Z",
+  "count": 12,
   "entries": [
     {
       "id": "byterover-review",
@@ -429,6 +429,48 @@
           "Test failure diagnosis",
           "Regression debugging",
           "Root cause analysis"
+        ]
+      }
+    },
+    {
+      "id": "rest-api-kickstart",
+      "name": "REST API Kickstart",
+      "version": "1.0.0",
+      "description": "Core principles and best practices for designing robust, testable, and performant REST APIs.",
+      "long_description": "A comprehensive, language-agnostic rulebook defining the boundaries, error handling patterns (RFC 7807), pagination, mapping (DTOs), and testability requirements for RESTful APIs. Feed this context bundle to your AI agents to ensure consistent and high-quality API generation.",
+      "type": "bundle",
+      "author": {
+        "name": "BRV Hub Team",
+        "url": "https://github.com/campfirein"
+      },
+      "license": "MIT",
+      "tags": [
+        "rest",
+        "api",
+        "architecture",
+        "best-practices",
+        "standards"
+      ],
+      "category": "productivity",
+      "path": "bundles/rest-api-kickstart",
+      "path_url": "https://hub.byterover.dev/rest-api-kickstart",
+      "manifest_url": "https://hub.byterover.dev/v/bundles/rest-api-kickstart/manifest.json",
+      "readme_url": "https://hub.byterover.dev/v/bundles/rest-api-kickstart/README.md",
+      "file_tree": [
+        {
+          "name": "context.md",
+          "url": "https://hub.byterover.dev/r/bundles/rest-api-kickstart/context.md"
+        }
+      ],
+      "created_at": "2026-03-09T08:40:17.412Z",
+      "updated_at": "2026-03-09T08:40:17.412Z",
+      "dependencies": [],
+      "metadata": {
+        "use_cases": [
+          "Designing new REST APIs",
+          "Standardizing API responses and errors",
+          "Reviewing API architectures",
+          "Generating testable HTTP handlers"
         ]
       }
     },
