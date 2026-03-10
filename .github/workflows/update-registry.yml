@@ -8,6 +8,8 @@ on:
       - "bundles/**"
       - "scripts/update-registry.js"
       - "schemas/**"
+  schedule:
+    - cron: "0 0 * * 1"
   workflow_dispatch:
 
 permissions:

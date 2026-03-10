@@ -27,7 +27,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
         run: |
           if gh pr diff ${{ github.event.pull_request.number }} --name-only | grep -q '^registry\.json$'; then
-            echo "::error::registry.json should not be modified directly — it is auto-generated."
+            echo "registry.json should not be modified directly — it is auto-generated." | tee validation-output.txt
             exit 1
           fi
 

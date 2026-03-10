@@ -2,7 +2,7 @@
 
 <p align="center">
   <picture>
-    <img src="https://raw.githubusercontent.com/campfirein/brv-hub/main/assets/banner.png" alt="BRV Hub Banner" width="500">
+    <img src="https://raw.githubusercontent.com/campfirein/brv-hub/main/assets/banner.png" alt="BRV Hub Banner" width="1273" height="665">
   </picture>
 </p>
 
@@ -21,10 +21,10 @@ brv-hub/
 
 ## Content Types
 
-| Type | Directory | Description |
-|------|-----------|-------------|
-| `agent-skill` | `skills/` | Reusable skills for AI coding agents |
-| `bundle` | `bundles/` | Context packs, knowledge bundles |
+| Type          | Directory  | Description                          |
+| ------------- | ---------- | ------------------------------------ |
+| `agent-skill` | `skills/`  | Reusable skills for AI coding agents |
+| `bundle`      | `bundles/` | Context packs, knowledge bundles     |
 
 ## Quick Start
 
@@ -38,6 +38,7 @@ npm run validate    # validate all manifests and structure
 Want to share your content? See the [Contributing Guide](./docs/contributing.md).
 
 Key rules:
+
 - `id` must match the directory name and be unique
 - `name` must be unique across all entries
 - Run `npm run validate` before submitting
