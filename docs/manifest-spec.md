@@ -26,11 +26,6 @@ Content type. Determines which directory the entry belongs in.
 | `agent-skill` | `skills/` |
 | `bundle` | `bundles/` |
 
-### `author` (object)
-- `name` (string, required)
-- `email` (string, optional)
-- `url` (string, optional)
-
 ### `tags` (array)
 1-10 string tags for search and discovery.
 
@@ -61,10 +56,6 @@ Arbitrary key-value mapping for additional metadata. The following keys are docu
   "version": "1.0.0",
   "description": "Comprehensive code review skill for pull requests and code changes",
   "type": "agent-skill",
-  "author": {
-    "name": "BRV Hub Team",
-    "url": "https://github.com/campfirein"
-  },
   "tags": ["code-review", "quality", "security"],
   "category": "code-quality"
 }

@@ -5,10 +5,6 @@
   "description": "Interactive knowledge-driven project onboarding with structured overview and gap identification",
   "long_description": "A structured workflow for getting up to speed on a project using ByteRover's accumulated knowledge. Queries all major domains, assesses knowledge completeness, presents a structured onboarding guide covering architecture, conventions, testing, and concerns, then identifies gaps and suggests running byterover-explore to fill them.",
   "type": "agent-skill",
-  "author": {
-    "name": "ByteRover Team",
-    "url": "https://github.com/campfirein"
-  },
   "license": "MIT",
   "tags": [
     "onboarding",

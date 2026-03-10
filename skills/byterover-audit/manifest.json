@@ -5,10 +5,6 @@
   "description": "Audit knowledge freshness and coverage, identify stale entries and gaps, and provide remediation commands",
   "long_description": "A structured workflow for auditing the health of your ByteRover knowledge base. Cross-references documented knowledge against the current codebase to find stale entries, missing coverage, and knowledge drift. Produces a coverage report with prioritized, actionable brv curate commands to fix issues.",
   "type": "agent-skill",
-  "author": {
-    "name": "ByteRover Team",
-    "url": "https://github.com/campfirein"
-  },
   "license": "MIT",
   "tags": [
     "audit",

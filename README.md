@@ -1,8 +1,12 @@
-# BRV Hub
+# BRV Hub - Community Hub for Memory Bundles & Skills | ByteRover
 
-Community-driven hub for AI coding agent content.
+<p align="center">
+  <picture>
+    <img src="https://raw.githubusercontent.com/campfirein/brv-hub/main/assets/banner.png" alt="BRV Hub Banner" width="500">
+  </picture>
+</p>
 
-Browse, search, and install pre-built agent skills, context bundles, and more — all powered by GitHub with zero backend infrastructure.
+Discover, share, and install memory bundles and skills for ByteRover — the memory layer for AI agents with up to 92.19% retrieval accuracy.
 
 ## Structure
 

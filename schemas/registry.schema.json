@@ -76,11 +76,12 @@
         },
         "author": {
           "type": "object",
-          "required": ["name"],
+          "required": ["name", "url", "username", "avatar_url"],
           "properties": {
             "name": { "type": "string" },
-            "email": { "type": "string", "format": "email" },
-            "url": { "type": "string", "format": "uri" }
+            "url": { "type": "string", "format": "uri" },
+            "username": { "type": "string" },
+            "avatar_url": { "type": "string", "format": "uri" }
           },
           "additionalProperties": false
         },

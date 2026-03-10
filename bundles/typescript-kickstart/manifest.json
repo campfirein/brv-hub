@@ -5,10 +5,6 @@
   "description": "Context bundle for bootstrapping TypeScript projects with best practices",
   "long_description": "A curated collection of TypeScript project setup patterns, tsconfig best practices, common utility types, and recommended tooling configurations. Feed this to your AI agent when starting a new TypeScript project.",
   "type": "bundle",
-  "author": {
-    "name": "BRV Hub Team",
-    "url": "https://github.com/campfirein"
-  },
   "license": "MIT",
   "tags": [
     "typescript",
