@@ -5,10 +5,6 @@
   "description": "Execute a phase plan task by task with verification, atomic commits, and progress tracking",
   "long_description": "A structured workflow for executing implementation plans created by byterover-plan. Works through tasks sequentially, verifies each against success criteria, creates atomic git commits, records progress in the knowledge base via brv curate, and validates the phase goal before transitioning to the next phase.",
   "type": "agent-skill",
-  "author": {
-    "name": "ByteRover Team",
-    "url": "https://github.com/campfirein"
-  },
   "license": "MIT",
   "tags": [
     "execution",

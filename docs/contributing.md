@@ -35,7 +35,6 @@ Your `manifest.json` must include:
 | `version` | Semver (e.g. `1.0.0`) |
 | `description` | Description of what the entry does, max 1024 chars |
 | `type` | `agent-skill` or `bundle` |
-| `author` | Object with `name` (required), `email` and `url` (optional) |
 | `tags` | 1-10 search tags |
 | `category` | See categories below |
 

@@ -5,10 +5,6 @@
   "description": "Investigate bugs using scientific method with persistent knowledge and hypothesis-driven analysis",
   "long_description": "A structured workflow for investigating bugs using the scientific method, enhanced by ByteRover's knowledge of past issues and project patterns. Queries known issues, forms falsifiable hypotheses, tests one variable at a time, and stores root cause analysis via brv curate for future reference.",
   "type": "agent-skill",
-  "author": {
-    "name": "ByteRover Team",
-    "url": "https://github.com/campfirein"
-  },
   "license": "MIT",
   "tags": [
     "debugging",

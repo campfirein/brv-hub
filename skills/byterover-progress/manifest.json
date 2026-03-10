@@ -5,10 +5,6 @@
   "description": "Check project progress, resume paused work, and route to the next action intelligently",
   "long_description": "A structured workflow for understanding where a project stands and what to do next. Loads all project state from the knowledge base, presents a status report with milestone and phase progress, detects paused work or incomplete phases, and intelligently routes to the appropriate next workflow skill to invoke.",
   "type": "agent-skill",
-  "author": {
-    "name": "ByteRover Team",
-    "url": "https://github.com/campfirein"
-  },
   "license": "MIT",
   "tags": [
     "progress",

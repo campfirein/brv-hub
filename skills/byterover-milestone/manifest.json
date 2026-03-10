@@ -5,10 +5,6 @@
   "description": "Define project milestones with goals, scoped requirements, phased roadmaps, and implementation decisions",
   "long_description": "A structured workflow for defining what to build next. Gathers goals through user conversation, scopes requirements with REQ-IDs for traceability, derives a phased roadmap using goal-backward analysis, and optionally captures implementation decisions for gray areas. Stores everything in the knowledge base via brv curate for downstream planning and execution.",
   "type": "agent-skill",
-  "author": {
-    "name": "ByteRover Team",
-    "url": "https://github.com/campfirein"
-  },
   "license": "MIT",
   "tags": [
     "milestone",

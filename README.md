@@ -1,8 +1,12 @@
-# BRV Hub
+# BRV Hub - Community Hub for Memory Bundles & Skills | ByteRover
 
-Community-driven hub for AI coding agent content.
+<p align="center">
+  <picture>
+    <img src="https://raw.githubusercontent.com/campfirein/brv-hub/main/assets/banner.png" alt="BRV Hub Banner" width="1273" height="665">
+  </picture>
+</p>
 
-Browse, search, and install pre-built agent skills, context bundles, and more — all powered by GitHub with zero backend infrastructure.
+Discover, share, and install memory bundles and skills for ByteRover — the memory layer for AI agents with up to 92.19% retrieval accuracy.
 
 ## Structure
 
@@ -17,10 +21,10 @@ brv-hub/
 
 ## Content Types
 
-| Type | Directory | Description |
-|------|-----------|-------------|
-| `agent-skill` | `skills/` | Reusable skills for AI coding agents |
-| `bundle` | `bundles/` | Context packs, knowledge bundles |
+| Type          | Directory  | Description                          |
+| ------------- | ---------- | ------------------------------------ |
+| `agent-skill` | `skills/`  | Reusable skills for AI coding agents |
+| `bundle`      | `bundles/` | Context packs, knowledge bundles     |
 
 ## Quick Start
 
@@ -34,6 +38,7 @@ npm run validate    # validate all manifests and structure
 Want to share your content? See the [Contributing Guide](./docs/contributing.md).
 
 Key rules:
+
 - `id` must match the directory name and be unique
 - `name` must be unique across all entries
 - Run `npm run validate` before submitting

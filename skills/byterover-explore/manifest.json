@@ -5,10 +5,6 @@
   "description": "Systematically explore a codebase and curate findings into ByteRover's context tree",
   "long_description": "A structured workflow for systematically exploring a codebase and curating findings into ByteRover's context tree. Maps technology stack, architecture, conventions, testing patterns, integrations, and concerns via brv curate. Also assesses documentation coverage and identifies knowledge gaps.",
   "type": "agent-skill",
-  "author": {
-    "name": "ByteRover Team",
-    "url": "https://github.com/campfirein"
-  },
   "license": "MIT",
   "tags": [
     "exploration",

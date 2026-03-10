@@ -9,7 +9,6 @@
     "version",
     "description",
     "type",
-    "author",
     "tags",
     "category"
   ],
@@ -45,16 +44,6 @@
       "type": "string",
       "enum": ["agent-skill", "bundle"],
       "description": "Content type. Determines which directory this entry belongs in."
-    },
-    "author": {
-      "type": "object",
-      "required": ["name"],
-      "properties": {
-        "name": { "type": "string" },
-        "email": { "type": "string", "format": "email" },
-        "url": { "type": "string", "format": "uri" }
-      },
-      "additionalProperties": false
     },
     "license": {
       "type": "string",

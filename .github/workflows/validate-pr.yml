@@ -22,6 +22,15 @@ jobs:
 
       - run: npm ci
 
+      - name: Check for registry.json changes
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh pr diff ${{ github.event.pull_request.number }} --name-only | grep -q '^registry\.json$'; then
+            echo "registry.json should not be modified directly — it is auto-generated." | tee validation-output.txt
+            exit 1
+          fi
+
       - name: Validate manifests
         id: validate
         run: npm run validate 2>&1 | tee validation-output.txt

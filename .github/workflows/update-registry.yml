@@ -8,6 +8,8 @@ on:
       - "bundles/**"
       - "scripts/update-registry.js"
       - "schemas/**"
+  schedule:
+    - cron: "0 0 * * 1"
   workflow_dispatch:
 
 permissions:
@@ -38,6 +40,8 @@ jobs:
 
       - name: Generate registry
         run: npm run update-registry
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Check for changes
         id: git-check
