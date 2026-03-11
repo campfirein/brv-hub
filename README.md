@@ -2,7 +2,7 @@
 
 <p align="center">
   <picture>
-    <img src="https://raw.githubusercontent.com/campfirein/brv-hub/main/assets/banner.png" alt="BRV Hub Banner" width="1273" height="665">
+    <img src="https://raw.githubusercontent.com/campfirein/brv-hub/main/assets/banner.png" alt="BRV Hub Banner" width="1273">
   </picture>
 </p>
 
