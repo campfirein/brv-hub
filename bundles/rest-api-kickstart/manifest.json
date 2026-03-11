@@ -1,0 +1,25 @@
+{
+  "id": "rest-api-kickstart",
+  "name": "REST API Kickstart",
+  "version": "1.0.0",
+  "description": "Core principles and best practices for designing robust, testable, and performant REST APIs.",
+  "long_description": "A comprehensive, language-agnostic rulebook defining the boundaries, error handling patterns (RFC 7807), pagination, mapping (DTOs), and testability requirements for RESTful APIs. Feed this context bundle to your AI agents to ensure consistent and high-quality API generation.",
+  "type": "bundle",
+  "license": "MIT",
+  "tags": [
+    "rest",
+    "api",
+    "architecture",
+    "best-practices",
+    "standards"
+  ],
+  "category": "productivity",
+  "metadata": {
+    "use_cases": [
+      "Designing new REST APIs",
+      "Standardizing API responses and errors",
+      "Reviewing API architectures",
+      "Generating testable HTTP handlers"
+    ]
+  }
+}
