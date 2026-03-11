@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-03-10T18:08:23.762Z",
-  "count": 11,
+  "generated_at": "2026-03-11T04:01:04.531Z",
+  "count": 12,
   "entries": [
     {
       "id": "byterover-review",
@@ -11,10 +11,10 @@
       "long_description": "A structured workflow for reviewing code changes against the project's documented conventions, patterns, and architecture decisions stored in ByteRover's knowledge base. Checks staged changes or specific files for convention violations, pattern mismatches, layer boundary issues, missing tests, and security concerns. Curates newly discovered patterns back into the knowledge base.",
       "type": "agent-skill",
       "author": {
-        "name": "wzlng",
-        "url": "https://github.com/wzlng",
-        "username": "wzlng",
-        "avatar_url": "https://avatars.githubusercontent.com/u/74853570?s=64&v=4"
+        "name": "Hiếu \"k0walski\" Nguyễn",
+        "url": "https://github.com/hieuntg81",
+        "username": "hieuntg81",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34208688?s=64&v=4"
       },
       "license": "MIT",
       "tags": [
@@ -37,7 +37,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-03-10T18:08:23.762Z",
+      "updated_at": "2026-03-11T04:01:04.531Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -56,10 +56,10 @@
       "long_description": "A structured workflow for creating implementation plans that leverage ByteRover's existing knowledge. Queries architecture, conventions, and related implementations, then uses goal-backward methodology to derive concrete tasks from desired outcomes. Produces a sequenced task breakdown with file paths, verification steps, and dependencies. Stores the plan via brv curate for downstream execution.",
       "type": "agent-skill",
       "author": {
-        "name": "wzlng",
-        "url": "https://github.com/wzlng",
-        "username": "wzlng",
-        "avatar_url": "https://avatars.githubusercontent.com/u/74853570?s=64&v=4"
+        "name": "Hiếu \"k0walski\" Nguyễn",
+        "url": "https://github.com/hieuntg81",
+        "username": "hieuntg81",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34208688?s=64&v=4"
       },
       "license": "MIT",
       "tags": [
@@ -82,7 +82,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-03-10T18:08:23.762Z",
+      "updated_at": "2026-03-11T04:01:04.531Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -101,10 +101,10 @@
       "long_description": "A structured workflow for systematically exploring a codebase and curating findings into ByteRover's context tree. Maps technology stack, architecture, conventions, testing patterns, integrations, and concerns via brv curate. Also assesses documentation coverage and identifies knowledge gaps.",
       "type": "agent-skill",
       "author": {
-        "name": "wzlng",
-        "url": "https://github.com/wzlng",
-        "username": "wzlng",
-        "avatar_url": "https://avatars.githubusercontent.com/u/74853570?s=64&v=4"
+        "name": "Hiếu \"k0walski\" Nguyễn",
+        "url": "https://github.com/hieuntg81",
+        "username": "hieuntg81",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34208688?s=64&v=4"
       },
       "license": "MIT",
       "tags": [
@@ -127,7 +127,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-03-10T18:08:23.762Z",
+      "updated_at": "2026-03-11T04:01:04.531Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -146,10 +146,10 @@
       "long_description": "A structured workflow for auditing the health of your ByteRover knowledge base. Cross-references documented knowledge against the current codebase to find stale entries, missing coverage, and knowledge drift. Produces a coverage report with prioritized, actionable brv curate commands to fix issues.",
       "type": "agent-skill",
       "author": {
-        "name": "wzlng",
-        "url": "https://github.com/wzlng",
-        "username": "wzlng",
-        "avatar_url": "https://avatars.githubusercontent.com/u/74853570?s=64&v=4"
+        "name": "Hiếu \"k0walski\" Nguyễn",
+        "url": "https://github.com/hieuntg81",
+        "username": "hieuntg81",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34208688?s=64&v=4"
       },
       "license": "MIT",
       "tags": [
@@ -172,7 +172,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-03-10T18:08:23.762Z",
+      "updated_at": "2026-03-11T04:01:04.531Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -191,10 +191,10 @@
       "long_description": "A structured workflow for defining what to build next. Gathers goals through user conversation, scopes requirements with REQ-IDs for traceability, derives a phased roadmap using goal-backward analysis, and optionally captures implementation decisions for gray areas. Stores everything in the knowledge base via brv curate for downstream planning and execution.",
       "type": "agent-skill",
       "author": {
-        "name": "wzlng",
-        "url": "https://github.com/wzlng",
-        "username": "wzlng",
-        "avatar_url": "https://avatars.githubusercontent.com/u/74853570?s=64&v=4"
+        "name": "Hiếu \"k0walski\" Nguyễn",
+        "url": "https://github.com/hieuntg81",
+        "username": "hieuntg81",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34208688?s=64&v=4"
       },
       "license": "MIT",
       "tags": [
@@ -217,7 +217,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-03-10T18:08:23.762Z",
+      "updated_at": "2026-03-11T04:01:04.531Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -236,10 +236,10 @@
       "long_description": "A structured workflow for executing implementation plans created by byterover-plan. Works through tasks sequentially, verifies each against success criteria, creates atomic git commits, records progress in the knowledge base via brv curate, and validates the phase goal before transitioning to the next phase.",
       "type": "agent-skill",
       "author": {
-        "name": "wzlng",
-        "url": "https://github.com/wzlng",
-        "username": "wzlng",
-        "avatar_url": "https://avatars.githubusercontent.com/u/74853570?s=64&v=4"
+        "name": "Hiếu \"k0walski\" Nguyễn",
+        "url": "https://github.com/hieuntg81",
+        "username": "hieuntg81",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34208688?s=64&v=4"
       },
       "license": "MIT",
       "tags": [
@@ -262,7 +262,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-03-10T18:08:23.762Z",
+      "updated_at": "2026-03-11T04:01:04.531Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -281,10 +281,10 @@
       "long_description": "A structured workflow for getting up to speed on a project using ByteRover's accumulated knowledge. Queries all major domains, assesses knowledge completeness, presents a structured onboarding guide covering architecture, conventions, testing, and concerns, then identifies gaps and suggests running byterover-explore to fill them.",
       "type": "agent-skill",
       "author": {
-        "name": "wzlng",
-        "url": "https://github.com/wzlng",
-        "username": "wzlng",
-        "avatar_url": "https://avatars.githubusercontent.com/u/74853570?s=64&v=4"
+        "name": "Hiếu \"k0walski\" Nguyễn",
+        "url": "https://github.com/hieuntg81",
+        "username": "hieuntg81",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34208688?s=64&v=4"
       },
       "license": "MIT",
       "tags": [
@@ -307,7 +307,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-03-10T18:08:23.762Z",
+      "updated_at": "2026-03-11T04:01:04.531Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -326,10 +326,10 @@
       "long_description": "A structured workflow for understanding where a project stands and what to do next. Loads all project state from the knowledge base, presents a status report with milestone and phase progress, detects paused work or incomplete phases, and intelligently routes to the appropriate next workflow skill to invoke.",
       "type": "agent-skill",
       "author": {
-        "name": "wzlng",
-        "url": "https://github.com/wzlng",
-        "username": "wzlng",
-        "avatar_url": "https://avatars.githubusercontent.com/u/74853570?s=64&v=4"
+        "name": "Hiếu \"k0walski\" Nguyễn",
+        "url": "https://github.com/hieuntg81",
+        "username": "hieuntg81",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34208688?s=64&v=4"
       },
       "license": "MIT",
       "tags": [
@@ -352,7 +352,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-03-10T18:08:23.762Z",
+      "updated_at": "2026-03-11T04:01:04.531Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -371,10 +371,10 @@
       "long_description": "A structured workflow for wrapping up work — either completing a milestone (shipping) or pausing work mid-phase (handoff). Shipping runs a pre-flight audit, gathers stats, produces a retrospective, evolves the project record, and optionally creates a git tag. Pausing compresses current work state into a resumable handoff stored via brv curate for seamless session continuation.",
       "type": "agent-skill",
       "author": {
-        "name": "wzlng",
-        "url": "https://github.com/wzlng",
-        "username": "wzlng",
-        "avatar_url": "https://avatars.githubusercontent.com/u/74853570?s=64&v=4"
+        "name": "Hiếu \"k0walski\" Nguyễn",
+        "url": "https://github.com/hieuntg81",
+        "username": "hieuntg81",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34208688?s=64&v=4"
       },
       "license": "MIT",
       "tags": [
@@ -397,7 +397,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-03-10T18:08:23.762Z",
+      "updated_at": "2026-03-11T04:01:04.531Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -416,10 +416,10 @@
       "long_description": "A structured workflow for investigating bugs using the scientific method, enhanced by ByteRover's knowledge of past issues and project patterns. Queries known issues, forms falsifiable hypotheses, tests one variable at a time, and stores root cause analysis via brv curate for future reference.",
       "type": "agent-skill",
       "author": {
-        "name": "wzlng",
-        "url": "https://github.com/wzlng",
-        "username": "wzlng",
-        "avatar_url": "https://avatars.githubusercontent.com/u/74853570?s=64&v=4"
+        "name": "Hiếu \"k0walski\" Nguyễn",
+        "url": "https://github.com/hieuntg81",
+        "username": "hieuntg81",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34208688?s=64&v=4"
       },
       "license": "MIT",
       "tags": [
@@ -441,7 +441,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-03-10T18:08:23.762Z",
+      "updated_at": "2026-03-11T04:01:04.531Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
@@ -453,6 +453,50 @@
       }
     },
     {
+      "id": "rest-api-kickstart",
+      "name": "REST API Kickstart",
+      "version": "1.0.0",
+      "description": "Core principles and best practices for designing robust, testable, and performant REST APIs.",
+      "long_description": "A comprehensive, language-agnostic rulebook defining the boundaries, error handling patterns (RFC 7807), pagination, mapping (DTOs), and testability requirements for RESTful APIs. Feed this context bundle to your AI agents to ensure consistent and high-quality API generation.",
+      "type": "bundle",
+      "author": {
+        "name": "Hiếu \"k0walski\" Nguyễn",
+        "url": "https://github.com/hieuntg81",
+        "username": "hieuntg81",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34208688?s=64&v=4"
+      },
+      "license": "MIT",
+      "tags": [
+        "rest",
+        "api",
+        "architecture",
+        "best-practices",
+        "standards"
+      ],
+      "category": "productivity",
+      "path": "bundles/rest-api-kickstart",
+      "path_url": "https://hub.byterover.dev/rest-api-kickstart",
+      "manifest_url": "https://hub.byterover.dev/v/bundles/rest-api-kickstart/manifest.json",
+      "readme_url": "https://hub.byterover.dev/v/bundles/rest-api-kickstart/README.md",
+      "file_tree": [
+        {
+          "name": "context.md",
+          "url": "https://hub.byterover.dev/r/bundles/rest-api-kickstart/context.md"
+        }
+      ],
+      "created_at": "2026-03-11T04:01:04.531Z",
+      "updated_at": "2026-03-11T04:01:04.531Z",
+      "dependencies": [],
+      "metadata": {
+        "use_cases": [
+          "Designing new REST APIs",
+          "Standardizing API responses and errors",
+          "Reviewing API architectures",
+          "Generating testable HTTP handlers"
+        ]
+      }
+    },
+    {
       "id": "typescript-kickstart",
       "name": "TypeScript Kickstart",
       "version": "1.0.0",
@@ -460,10 +504,10 @@
       "long_description": "A curated collection of TypeScript project setup patterns, tsconfig best practices, common utility types, and recommended tooling configurations. Feed this to your AI agent when starting a new TypeScript project.",
       "type": "bundle",
       "author": {
-        "name": "wzlng",
-        "url": "https://github.com/wzlng",
-        "username": "wzlng",
-        "avatar_url": "https://avatars.githubusercontent.com/u/74853570?s=64&v=4"
+        "name": "Hiếu \"k0walski\" Nguyễn",
+        "url": "https://github.com/hieuntg81",
+        "username": "hieuntg81",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34208688?s=64&v=4"
       },
       "license": "MIT",
       "tags": [
@@ -484,7 +528,7 @@
         }
       ],
       "created_at": "2026-02-17T00:00:00Z",
-      "updated_at": "2026-03-10T18:08:23.762Z",
+      "updated_at": "2026-03-11T04:01:04.531Z",
       "dependencies": [],
       "metadata": {
         "use_cases": [
