@@ -8,16 +8,34 @@ const HUB_BASE_URL = "https://hub.byterover.dev";
 // Cache GitHub user lookups to avoid duplicate API calls
 const githubUserCache = new Map();
 
+// In shallow clones, --no-merges may fail to filter merge commits because parent
+// objects are missing. This helper reads the commit object directly to count parents.
+function isMergeCommit(sha) {
+  try {
+    const raw = execSync(`git cat-file -p ${sha}`, {
+      encoding: "utf8",
+      cwd: path.join(__dirname, ".."),
+    });
+    const parentCount = (raw.match(/^parent /gm) || []).length;
+    return parentCount > 1;
+  } catch {
+    return false;
+  }
+}
+
 async function getGitAuthor(entryPath) {
   try {
     const result = execSync(
-      `git log --diff-filter=A --no-merges --format='%aN|%aE' --reverse -- "${entryPath}" | head -1`,
+      `git log --diff-filter=A --no-merges --format='%H|%aN|%aE' --reverse -- "${entryPath}" | head -1`,
       { encoding: "utf8", cwd: path.join(__dirname, "..") },
     ).trim();
 
     if (!result) return null;
 
-    const [name, email] = result.split("|");
+    const [sha, name, email] = result.split("|");
+
+    // Defense: --no-merges can miss merge commits in shallow clones
+    if (isMergeCommit(sha)) return null;
 
     // Try to extract GitHub username from noreply email
     // Format: <id>+<username>@users.noreply.github.com or <username>@users.noreply.github.com
@@ -26,7 +44,7 @@ async function getGitAuthor(entryPath) {
     );
     const username = noreplyMatch ? noreplyMatch[1] : name;
 
-    return { username, email };
+    return { username, email, sha };
   } catch {
     return null;
   }
@@ -44,7 +62,10 @@ async function getPRAuthor(entryPath) {
 
     if (!sha) return null;
 
-    const repo = process.env.GITHUB_REPOSITORY || "byterover/brv-hub";
+    // Defense: --no-merges can miss merge commits in shallow clones
+    if (isMergeCommit(sha)) return null;
+
+    const repo = process.env.GITHUB_REPOSITORY || "campfirein/brv-hub";
     const res = await fetch(
       `https://api.github.com/repos/${repo}/commits/${sha}/pulls`,
       {
@@ -89,6 +110,32 @@ async function resolveGitHubAuthor(authorInfo) {
       };
       githubUserCache.set(username, author);
       return author;
+    }
+
+    // Username lookup failed (e.g. git name != GitHub login) — resolve via commit API
+    if (authorInfo.sha) {
+      const token = process.env.GITHUB_TOKEN;
+      const repo = process.env.GITHUB_REPOSITORY || "campfirein/brv-hub";
+      const headers = { Accept: "application/vnd.github+json" };
+      if (token) headers.Authorization = `Bearer ${token}`;
+      const commitRes = await fetch(
+        `https://api.github.com/repos/${repo}/commits/${authorInfo.sha}`,
+        { headers },
+      );
+      if (commitRes.ok) {
+        const commitData = await commitRes.json();
+        if (commitData.author) {
+          const data = commitData.author;
+          const author = {
+            name: commitData.commit?.author?.name || data.login,
+            url: data.html_url,
+            username: data.login,
+            avatar_url: `https://avatars.githubusercontent.com/u/${data.id}?s=64&v=4`,
+          };
+          githubUserCache.set(username, author);
+          return author;
+        }
+      }
     }
   } catch {
     // Fallback on API failure
