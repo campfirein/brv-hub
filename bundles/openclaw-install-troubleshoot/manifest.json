@@ -1,0 +1,25 @@
+{
+  "id": "openclaw-install-troubleshoot",
+  "name": "OpenClaw Installation Troubleshooting",
+  "version": "1.0.0",
+  "description": "Common OpenClaw installation failures and step-by-step solutions for Node.js, Docker, Windows, and Linux environments.",
+  "long_description": "A comprehensive troubleshooting guide covering the most common failures when installing and configuring OpenClaw — the AI Gateway/Agent framework. Includes solutions for permission errors, version mismatches, port conflicts, Docker issues, and platform-specific problems. Feed this bundle to your AI agents to help users diagnose and resolve OpenClaw setup issues quickly.",
+  "type": "bundle",
+  "license": "MIT",
+  "tags": [
+    "openclaw",
+    "installation",
+    "troubleshooting",
+    "setup",
+    "devops"
+  ],
+  "category": "debugging",
+  "metadata": {
+    "use_cases": [
+      "Diagnosing OpenClaw installation failures",
+      "Resolving environment and permission issues",
+      "Fixing Docker and port conflict problems",
+      "Supporting users on Windows, macOS, and Linux"
+    ]
+  }
+}
