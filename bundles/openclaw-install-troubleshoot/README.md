@@ -21,6 +21,9 @@ Feed this bundle to your AI coding agents when:
 ## Usage
 
 Reference this context when prompting your AI:
+```text
+@openclaw-install-troubleshoot
+```
 
 ## License
 
