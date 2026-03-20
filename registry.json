@@ -1,7 +1,7 @@
 {
   "version": "1.0.0",
-  "generated_at": "2026-03-11T13:36:16.459Z",
-  "count": 12,
+  "generated_at": "2026-03-20T08:51:20.797Z",
+  "count": 13,
   "entries": [
     {
       "id": "byterover-review",
@@ -449,6 +449,50 @@
           "Test failure diagnosis",
           "Regression debugging",
           "Root cause analysis"
+        ]
+      }
+    },
+    {
+      "id": "openclaw-install-troubleshoot",
+      "name": "OpenClaw Installation Troubleshooting",
+      "version": "1.0.0",
+      "description": "Common OpenClaw installation failures and step-by-step solutions for Node.js, Docker, Windows, and Linux environments.",
+      "long_description": "A comprehensive troubleshooting guide covering the most common failures when installing and configuring OpenClaw — the AI Gateway/Agent framework. Includes solutions for permission errors, version mismatches, port conflicts, Docker issues, and platform-specific problems. Feed this bundle to your AI agents to help users diagnose and resolve OpenClaw setup issues quickly.",
+      "type": "bundle",
+      "author": {
+        "name": "Hiếu \"k0walski\" Nguyễn",
+        "url": "https://github.com/hieuntg81",
+        "username": "hieuntg81",
+        "avatar_url": "https://avatars.githubusercontent.com/u/34208688?s=64&v=4"
+      },
+      "license": "MIT",
+      "tags": [
+        "openclaw",
+        "installation",
+        "troubleshooting",
+        "setup",
+        "devops"
+      ],
+      "category": "debugging",
+      "path": "bundles/openclaw-install-troubleshoot",
+      "path_url": "https://hub.byterover.dev/openclaw-install-troubleshoot",
+      "manifest_url": "https://hub.byterover.dev/v/bundles/openclaw-install-troubleshoot/manifest.json",
+      "readme_url": "https://hub.byterover.dev/v/bundles/openclaw-install-troubleshoot/README.md",
+      "file_tree": [
+        {
+          "name": "context.md",
+          "url": "https://hub.byterover.dev/r/bundles/openclaw-install-troubleshoot/context.md"
+        }
+      ],
+      "created_at": "2026-03-20T08:51:20.797Z",
+      "updated_at": "2026-03-20T08:51:20.797Z",
+      "dependencies": [],
+      "metadata": {
+        "use_cases": [
+          "Diagnosing OpenClaw installation failures",
+          "Resolving environment and permission issues",
+          "Fixing Docker and port conflict problems",
+          "Supporting users on Windows, macOS, and Linux"
         ]
       }
     },
